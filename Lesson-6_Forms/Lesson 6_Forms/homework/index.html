@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header class="header"><h1>Домашня робота з Формами</h1></header>
+      <div class="conteiner">
+    <form action="/submit-form" method="POST" onsubmit="return validateForm()">  
+        <table>
+            <tr>
+                <td><label  for="name">Повне ім'я</label></td>
+                <td><input  id="name" name="name" type="text" required></td>
+            </tr>
+
+            <tr> <td><label for="email">Email</label></td>
+                <td><input  type="email" name="email" id="email" required></td>
+            </tr>
+             
+            <tr><td><label for="password">Пароль</label></td>
+                <td><input  type="password" name="password" id="password" required></td>                 
+            </tr>
+
+            <tr>
+                <td><label for="password-cofirm">Пароль ще раз</label></td>
+                <td><input  type="password" name="password-cofirm" id="password-cofirm" required></td>
+            </tr>
+
+            <tr><fieldset required><td><legend>Стать</legend></td>
+                    <td><input type="radio" name="sex" id="male" required> 
+                    <label for="male">чоловіча</label>
+                    <input type="radio" name="sex" id="female" required>
+                    <label for="female">жіноча</label></td>
+                </fieldset> 
+            </tr>
+
+               <tr>
+                <td> <label for="age">Вік</label></td>
+                <td><input class="age" type="number" min="1" max="99" name="age" id="age" required></td>
+               </tr>
+
+               <tr>
+                <td> <label for="course">Курс</label></td>
+                <td> <select id="course" required>
+                    <optgroup>
+                      <option value="" selected disabled hidden>-=Виберіть курс=-</option>
+                      <option value="front-end">Front-End</option>
+                      <option value="back-end">Back-End</option>
+                      <option value="project-management">Project Management</option>
+                      <option value="qa-manual">QA Manual</option>
+                    </optgroup>
+                  </select>
+                  
+                  </td>
+            </tr>
+
+            <tr>
+                <td><label for="adress">Повна адреса</label></td>
+                <td><textarea class="adress" name="adress" id="adress" cols="30" rows="10" 
+                    placeholder="Країна, регіон, місто/селище, вулиця" required></textarea></td>                     
+            </tr>
+        </table>    
+            
+            <input class="personal-data"  type="checkbox" name="personal-data" id="personal-data" required>
+            <label class="personal-data" for="personal-data">Я погоджуюсь з обробкою персональних даних</label>
+              <br>
+         
+            <button type="reset" class="button">Очистити форму</button>
+            <button type="submit" class="button">Зареєструватися</button>         
+    </form>
+    <script>
+        function validateForm() {
+          var course = document.getElementById("course").value;
+          if (course === "") {
+            alert("Пожалуйста, выберите курс");
+            return false;
+          }
+          return true;
+        }
+      </script>
+</div> 
+<footer class="footer"><a href="https://github.com/AlexBadger56/Front-end-lessons/tree/main/Lesson%206_Forms/homework">Мій репозиторій</a>
+</footer> 
+</body>
+</html>

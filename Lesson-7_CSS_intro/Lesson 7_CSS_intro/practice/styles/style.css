@@ -1,0 +1,109 @@
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#p1 {
+    color: blue;
+}
+
+.title {
+    color: pink;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.crossed {
+    text-decoration: line-through;
+}
+
+.title {
+    color: lightblue;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+.title-red {
+    color: red;
+}
+
+.title-orange {
+    color: orange;
+}
+
+.text {
+    color: aqua;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: dashed;
+    font-style: italic;
+    background-color: antiquewhite;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.title,
+.text {
+    background-color: grey;
+}
+
+.container {
+    display: flex;
+    border: 5px solid orange;
+    width: 650px;
+    height: 200px;
+    border-radius: 14px;
+}
+
+.container-contenct {
+   width: 300px;
+}
+
+.container-image {
+    float: right;
+    size: 50%;
+}
+
+.container p {
+    background-color: blanchedalmond;
+}
+
+.list {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.padding {
+   padding: 10px 15px 20px 30px;
+}
+
+.margin {
+   margin: 10px 15px 20px 10px;
+}
+
+.wrapper {
+    padding: 10px 100px;
+}

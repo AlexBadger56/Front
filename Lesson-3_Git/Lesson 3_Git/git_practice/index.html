@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./styles/styles.css'>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Site header with navigation -->
+    <header class="header">
+      <h1>My site</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#news">News</a>
+        </li>
+        <li>
+            <a href="#catalog">Catalog</a>
+        </li>
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Site main content-->
+    <main>
+      <section class="content" id="home">
+        <h2>Home</h2>
+        <p>Some home content</p>
+        <form >
+          <label for="firstname">Firstname text</label>
+          <input type="text" name="firstname"  id="firstname" placeholder="Enter user name" required>
+
+          <label for="Lastname">Lastname text</label>
+          <input type="text" name="Lastname" id="Lastname" placeholder="Enter user lastname">
+
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age" placeholder="Enter user age">
+
+          <label for="Password">Password</label>
+          <input type="password" name="password" id="password" placeholder="Enter user password" required>
+
+          <label for="Confirm-password">Confirm password</label>
+          <input type="password" name="Confirm-password" id="Confirm-password" placeholder="Confirm user password" required>
+          
+          <label for="role">Select user role</label>
+            <select name="role">
+              <option>Guest</option>
+              <option>User</option>
+
+              <optgroup label="manager type">
+                <option>Head manager</option>
+                <option>Middle manager</option>
+                <option>Junior manager</option>
+
+              </optgroup>
+              
+              <option>Admin</option>
+            </select>
+              <label for="rules">Site rules</label>
+              <input type="checkbox" name="rules" id="rules" required>
+
+              <label for="theme">Site theme</label>
+              <input type="radio" name="theme" id="theme" >
+
+        <button type="submit">Create</button>
+        
+        </form>
+      </section>
+      
+      <!--Site news-->
+      <section class="content" id="news">
+        <h2>News</h2>
+          <p>Some news content</p>
+       </section>
+
+
+      <!-- Catalog users table-->
+      <section class="content"  id="catalog">
+        <h2>Catalog</h2>
+        <p>Catalog of users</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>User A Name</td>
+              <td>User A Lastname</td>
+              <td>31</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>User B Name</td>
+              <td>User B Lastname</td>
+              <td>56</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>User C Name</td>
+              <td>User C Lastname</td>
+              <td>29</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <td>3 Total</td>
+            <td>41 Averege age</td>
+          </tfoot>
+        </table>
+      </section>
+
+      <section class="content" id="about">
+        <h2>About</h2>
+        <p>Some about content</p>
+      </section>
+      
+      <!--Send mail form-->
+      <section class="content" id="contact">
+        <h2>Contact</h2>
+        <p>Some Contact content</p>
+        <form action="mailto:tr1nkle@i.ua">
+          <input type="text" name="subject">
+          <textarea name="body"></textarea>
+          <input type="submit" value="send email">
+        </form>
+
+        <a href="mailto:tr1nkle@i.ua?subject=Subject%20&body=Body">Send me test email</a>
+      </section>
+    
+    </main>
+<!-- Site footer-->
+    <footer class="footer">
+      <span>My site&#169</span>
+    </footer>
+</div>
+
+
+    <script src='./scripts/index.js'></script>
+</body>
+
+</html>

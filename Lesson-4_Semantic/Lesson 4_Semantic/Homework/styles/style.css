@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 1;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+.wrapper {
+  background-color: whitesmoke;
+}
+
+.header {
+  
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+   margin-top: 15px ;
+    margin-bottom: 15px; 
+  
+}
+
+iframe {
+    display: block;  /* iframes are inline by default */   
+        width: 100%;  /* Set width to 100% of the viewport width */     
+        border: 1; /* Remove default border */
+       
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: justify;
+ }
+
+ h2 {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15px ;
+    margin-bottom: 15px;
+ }
+
+ img {
+    margin-top: 15px ;
+    margin-bottom: 10px;
+ }
+
+ footer {
+    
+    margin-top: 15px ;
+    margin-bottom: 15px; 
+    background-color: whitesmoke;
+ }
+
+ 
+
+.video-youtube {
+    max-width: 1024px;
+    width: 100%;
+    margin: 30px auto 0;
+}

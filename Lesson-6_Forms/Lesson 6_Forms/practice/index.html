@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6 Form</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <a href="./admin.html">Admin page</a>
+    <br>
+    <br>
+
+    <form style="display: flex; flex-direction: column; width: 300px">
+        <label for="firstname">Firstname</label>
+        <input id="firstname" name="firstname" type="text" placeholder="Enter user firstname" required>
+        <br>
+
+        <label for="lastname">Lastname</label>
+        <input id="lastname" name="lastname" type="text" placeholder="Enter user lastname" required>
+        <br>
+
+        <label for="role1">User role 1</label>
+        <input id="role1" name="role1" type="text"  readonly value="Manager 1">
+        <br>
+
+        <label for="role2">User role 2</label>
+        <input id="role2" name="role2" type="text"  disabled value="Manager 2">
+        <br>
+
+        <label for="user-mail">User email</label>
+        <input type="email" name="mail" id="user-email" placeholder="example@mail.com">
+        <br>    
+
+        <label for="user-password">User password</label>    
+        <input type="password" name="password" id="user-password" required>
+        <br>   
+
+        <label for="policy1">Site policy 1</label>    
+        <input type="checkbox" name="policy1" id="policy1" required>
+        <br>   
+
+        <label for="policy2">Site policy 2</label>    
+        <input type="checkbox" name="policy2" id="policy2" checked>
+        <br>   
+
+        <fieldset>
+            <legend>User city</legend>
+
+            <label for="kyiv-radio">Kyiv</label>
+            <input id="kyiv-radio" name="city" type="radio" value="Kyiv" >
+
+            <label for="kharkiv-radio">Kharkiv</label>
+            <input id="kharkiv-radio" name="city" type="radio" value="Kharkiv" >
+
+            <label for="lviv-radio">Lviv</label>
+            <input id="lviv-radio" name="city" type="radio" value="Lviv" >
+
+        </fieldset>
+        <br>
+        <label for="user-role">Choose role</label>
+        <select id="user-role">
+            <option disabled>Guest 1</option>
+            <option selected disabled>Guest 2</option>
+        <optgroup label="developer">
+            <option>Developer 1</option>
+            <option>Developer 2</option>
+            <option>Developer 3</option>
+        </optgroup> 
+
+        <optgroup label="manager">
+            <option>Manager 1</option>
+            <option>Manager 2</option>
+            <option>Menager 3</option>
+        </optgroup>
+
+        <optgroup label="admin">
+            <option disabled>Admin 1</option>
+            <option>Admin 2</option>
+            <option>Admin 3</option>    
+        </optgroup>
+        </select>
+        <br>
+
+        <label for="file-upload">File upload</label>
+        <input type="file" name="user-avatar" id="file-upload">
+        <br>
+
+        <button type="submit">Send</button>
+    </form>
+
+
+</body>
+</html>
