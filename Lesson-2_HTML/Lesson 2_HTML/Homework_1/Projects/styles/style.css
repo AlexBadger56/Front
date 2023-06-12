@@ -2,9 +2,11 @@
     font-style: italic;
     text-align: center;
 }
+
 body {
     background-color: bisque;
 }
+
 .text_class{
    text-align: justify;
    vertical-align: middle; 
@@ -15,14 +17,17 @@ body {
    padding-bottom: 85px;
    
 }
+
 p {
     margin: 0;
     text-indent: 3ch;
   }
+
 .img_class {
     float: left;
     margin: 0px 20px 20px 0; 
 }
+
 .span_class {
     vertical-align: middle;
     line-height: 2.5;
@@ -30,12 +35,14 @@ p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: underline;
 }
+
 .profile,
 .contact {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
 }
+
 .profile {
     display: flex;
 }
