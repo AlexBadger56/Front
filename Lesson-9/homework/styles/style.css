@@ -1,0 +1,127 @@
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.frame-bckgrnd {
+    background: #3B3F45;
+    height: 100vh;
+    border-top: 15px #ffffff ridge;
+    border-left: 10px #ffffff ridge;
+    border-right: 2px #ffffff solid;
+    border-bottom: 2px #ffffff solid;
+    font-family: 'Roboto';
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 20px 0 12px;
+    background: #4A4F56;
+}
+
+.pink-text {
+    color: #FF8984;
+}
+
+.list-form {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto 45px;
+    max-width: 534px;
+    width: 100%;
+}
+
+label {
+    padding: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+li {
+    width: 100%;
+    background: #88839E;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    transition: all .1s ease-in;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+span {
+    display: inline-flex;
+    align-items: center;
+    /* gap: 10px; */
+}
+
+small {
+    font-size: 70%;
+  
+}
+
+small::before{
+    content: "(";
+}
+
+small::after {
+    content: ")";
+}
+
+ul li:nth-child(even) {
+    background: #7A7593;
+}
+
+ul li:hover {
+    border-top: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    background: #625E77;
+}
+
+li:active label{
+    color: lightgray;
+}
+
+.list-form input[type="checkbox"] {
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .list-form input[type="checkbox"]:checked + span {
+	text-decoration: line-through;
+	color: #C4C8CF;
+}
+
+footer {
+    max-width: 534px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-wrapper {
+	background: #4A4F56;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.footer-title {
+  font-weight: 400;
+}
+
+.footer-title::after {
+    content: ")";
+}
