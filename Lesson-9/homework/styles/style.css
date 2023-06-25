@@ -197,6 +197,7 @@ li>img {
     width: 180px;
     height: 50px;
     font-family: Poppins;
+    
 }
 
 .logo {
@@ -219,5 +220,13 @@ li>img {
     border: 1px solid rgba(188, 208, 229, 1);
     color: rgba(188, 208, 229, 1);
     margin-bottom: 25px;
-
 }
+
+.button-link {
+    padding: 14px;
+    margin: 0  0  0 17px;
+}
+
+/* .repo {
+    margin: 25px auto;
+} */
