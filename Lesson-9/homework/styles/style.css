@@ -10,7 +10,19 @@
     src: url('../assets/fonts/GothamBold.ttf') format('truetype');
 }
 
-.header, main, .footer {
+.link {
+    color: #2F281E;
+}
+
+.link:hover {
+    color: #FF9900;
+}
+
+.link-logo:hover {
+    opacity: .7 ;
+}
+
+.wrapper {
     margin: 17px auto 70px;
     max-width: 1200px;
 }
@@ -174,15 +186,23 @@ li>img {
     font-weight: 600;
 }
 
+/* Buttons */
 .button {
     width: 110px;
     height: 46px;
     border-radius: 4px;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: Orange;
     color: rgba(255, 255, 255, 1);
     border-style: none;
     text-align: center;
+    border: 1px solid orange;
+}
+
+.button:hover {
+    color: rgba(47, 40, 30, 1);
+    background-color: transparent;
+    border: 1px solid rgba(188, 208, 229, 1);
 }
 
 .button-bg-white {
@@ -191,6 +211,18 @@ li>img {
     margin: 0 32px;
     border-color: rgba(188, 208, 229, 1);
     color: rgba(47, 40, 30, 1);
+}
+
+.button-bg-white:hover {
+    color: white;
+    background-color: orange;
+    border-color: orange;
+}
+
+/* Transition */
+.link-style { 
+    transition: .4s;
+    text-decoration: none;
 }
 
 .button-l {
@@ -220,6 +252,7 @@ li>img {
     border: 1px solid rgba(188, 208, 229, 1);
     color: rgba(188, 208, 229, 1);
     margin-bottom: 25px;
+    padding: 0 20px;
 }
 
 .button-link {
@@ -227,6 +260,6 @@ li>img {
     margin: 0  0  0 17px;
 }
 
-/* .repo {
-    margin: 25px auto;
-} */
+.form-input::placeholder {
+    color: #BCD0E5;
+}
