@@ -68,9 +68,7 @@
 
 .design-tools {
     display: grid;
-    background-image: url(../assets/images/bg.svg);
-    background-repeat: no-repeat;
-    background-position: center bottom;
+    
     height: 510px;
     grid-template: repeat(3, 1fr) / repeat(4, 1fr);
     gap: 20px;
@@ -79,6 +77,13 @@
         "title title title title"
         "arrow wave heart sand-clock"
         ". button button ." ;
+}
+
+.design-tools-bg {
+    background-image: url(../assets/images/bg.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
 }
 
 #content-title {
