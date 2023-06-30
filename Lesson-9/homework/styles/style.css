@@ -32,7 +32,10 @@
     gap: 20px;
 }
 
-.design-thinking, .design-professionals, .product-managers, .marketers  {
+.design-thinking, 
+.design-professionals, 
+.product-managers, 
+.marketers  {
     display: flex;
     box-sizing: border-box;
     justify-content: center;
@@ -119,29 +122,47 @@
     color: rgba(84, 72, 55, 1);
 }
 
-.text, .title, .title-m, .title-s, article p, article h4, article span, .footer, #phone {
+.text, 
+.title, 
+.title-m, 
+.title-s, 
+article p, 
+article h4, 
+article span, 
+.footer, 
+#phone {
     font-family: Montserrat;
     letter-spacing: 0px;
    }
 
-.title, .title-m, .title-s, .footer-title, article h4 {
+.title, 
+.title-m, 
+.title-s, 
+.footer-title, 
+article h4 {
    color: rgba(47, 40, 30, 1);
 }
 
 
-.font-size-16, article p {
+.font-size-16, 
+article p {
     font-size: 16px;
 }
 
-.design-thinking, .design-tools, .design-professionals, .product-managers {
+.design-thinking, 
+.design-tools, 
+.design-professionals, 
+.product-managers {
     margin-bottom: 100px;
 }
 
-.padding-bot-10, li>h4 {
+.padding-bot-10,
+li>h4 {
     padding-bottom: 10px;
 }
 
-#footer-list1>li, #footer-list2>li {
+#footer-list1>li, 
+#footer-list2>li {
     padding-bottom: 15px;
 }
 
@@ -153,7 +174,8 @@
     padding-bottom: 25px;
 }
 
-.padding-bot-30, li>p {
+.padding-bot-30, 
+li>p {
     padding-bottom: 30px;
 }
 
@@ -174,7 +196,8 @@ li>img {
     line-height: 30px;
 }
 
-.title, .footer-title {
+.title, 
+.footer-title {
     font-weight: 700;
 }
 
@@ -187,7 +210,10 @@ li>img {
     padding: 30px 100px 16px 0;
 }
 
-.title-m, .title-s, .button, article h4 {
+.title-m, 
+.title-s, 
+.button, 
+article h4 {
     font-weight: 600;
 }
 
