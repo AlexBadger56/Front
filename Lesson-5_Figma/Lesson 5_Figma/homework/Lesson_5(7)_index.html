@@ -9,80 +9,149 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header text-style wrapper">
         <nav >
-            <ul >
-                <li class="site_navigation "> <a class="nav-link" href="#home">Home</a> </li>
-                <li class="site_navigation"> <a href="#about_me">About me</a> </li>
-                <li class="site_navigation"> <a href="#skills">Skills</a> </li>
-                <li class="site_navigation"> <a href="#portfolio">Portfolio</a> </li>
-                <li class="site_navigation"> <a href="#contacts">Contacts</a> </li>
+            <ul class="navigation">
+                <li> <a  class="nav-link" href="#home">Home</a> </li>
+                <li> <a  class="nav-link" href="#about_me">About me</a> </li>
+                <li> <a  class="nav-link" href="#skills">Skills</a> </li>
+                <li> <a  class="nav-link" href="#portfolio">Portfolio</a> </li>
+                <li> <a  class="nav-link" href="#contacts">Contacts</a> </li>
             </ul>
            
         </nav>
       
     </header>
         
-    <section id="home">
-        <div class="conteiner">
-            <hr>
-            <h1 class="site_title">Denis Novik</h1>
-           
-            <img class="photo" src="./assets/images/Novik.svg" alt="Novik_photo">
-        </div>
-    </section>
+    <main >
+        <section class="wrapper" id="home">
+            <div>
+               <h1 class="title-l">Denis Novik</h1>
+            
+                <img class="hero-img" src="./assets/images/Novik.png    " alt="Novik_photo">
+            </div>
+        </section>
 
-    <section id="about_me" >
-        <div class="conteiner_colored">
-        <h2 class="content_titles">About me</h2>
-        <p class="content">Hi, I'm Denis – UX/UI designer from Minsk. <br>
-            I'm interested in design and everything connected with it.</p>
-            <p class="content"> I'm studying at courses "Web and mobile design 
-                interfaces" in IT-Academy.</p>
-            <p class="content">Ready to implement excellent projects <br>
-                with wonderful people.</p>
-         </div>
-    </section>
-    
-    <section id="skills">
-        <div class="conteiner">
-            <h2 class="content_titles">Skills</h2>
-            <p class="content">I work in such programs as</p>
-            <br>
-           
-            <img class="skills_img" src="./assets/images/Photoshop.png" alt="Photoshop_logo">
-            <img class="skills_img" src="./assets/images/Adobe_Ilustrator.png" alt="Adobe_Ilustrator">
-            <img class="skills_img" src="./assets/images/AfterEffects.png" alt="AfterEffects">
-            <img class="skills_img" src="./assets/images/Figma.png" alt="Figma_logo">
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <div class="conteiner_colored">
-            <h2 class="content_titles">Portfolio</h2>
-            <img class="photo" src="./assets/images/Portfolio.svg" alt="Portfolio_img">
-            <a class="link" href=""><ins>Online fashion store - <br>Homepage</ins> </a> 
-            <img class="photo" src="./assets/images/reebok_web.svg" alt="reebok_web">
-            <a class="link" href=""><ins>Reebok Store - Concept</ins> </a>  
-            <img class="photo" src="./assets/images/reebok_web (1).svg" alt="braun">
-            <a class="link" href=""><ins> Braun Landing Page - Concept</ins> </a>  
-        </div>
-    </section>
-
-    <section id="contacts">
-        <div class="conteiner">
-            <h2 class="content_titles">Contacts</h2>
-            <p class="content">Want to more or just chat? <br> You are welcome!</p>
-            <button class="button">Send message</button>
-            <div class="social"> 
-                <img class="social_img" src="./assets/images/LinkedIn.png" alt="LinkedIn">
-                <img class="social_img" src="./assets/images/Insta.png" alt="Instagram">
-                <img class="social_img" src="./assets/images/BE.png" alt="Behance">
-                <img class="social_img" src="./assets/images/Dribble.png" alt="Dribble"></div>
-                <p class="social_text">Like me on <br> LinkedIn, Instagram, Behance, <br>Dribble</p>
-                <a class="link" href="https://github.com/AlexBadger56/Front_Lessons/tree/main/Lesson-5_Figma/Lesson%205_Figma/homework"><ins> Мій репозиторій</ins> </a>
-        </div>
+        <section id="about_me" >
+            <div class="about_me wrapper text-style ">
+             <h2 class="title-l title-m">About me</h2>
+                 <p class="padding-bottom-30" >Hi, I'm Denis – UX/UI designer from Minsk. <br>
+                I'm interested in design and everything connected with it.</p>
+                <p class="padding-bottom-30"> I'm studying at courses "Web and mobile design 
+                    interfaces" in IT-Academy.</p>
+                <p class="padding-bottom-30">Ready to implement excellent projects <br>
+                    with wonderful people.</p>
+            </div>
+        </section>
         
-    </section>
+        <section class="wrapper skills text-style" id="skills">
+            
+                <h2 class="title-l title-m padding-bottom-20">Skills</h2>
+                <p class="padding-bottom-50">I work in such programs as</p>
+                <br>
+
+        <div class="skills_soft">
+            <div class=" skills_soft_level ">
+                <div class="container-img">
+                <img  class="skills_soft_img" src="./assets/images/Ps.png" alt="Photoshop Logo">
+            </div>
+                             
+            <p class="skills_soft_text">Adobe Photoshop</p>
+                
+                
+                <div class="skills_soft_img_stars">
+                    <img  src="./assets/images/star-icon-filled.png" alt="Filled Star">
+                    <img src="./assets/images/star-icon-filled.png" alt="Filled Star">
+                    <img src="./assets/images/star-icon-empty.png" alt="Empty Star">
+                    <img src="./assets/images/star-icon-empty.png" alt="Empty Star">
+                    <img src="./assets/images/star-icon-empty.png" alt="Empty Star">
+                </div>
+            </div>
+
+            <div class="skills_soft_level">
+                <div class="container-img">
+                    <img  class="skills_soft_img" src="./assets/images/Adobe_Ilustrator.png" alt="Adobe Ilustrator Logo">
+                    
+                </div>
+
+                <p class="skills_soft_text">Adobe Illustrator</p>
+
+                <div class="skills_soft_img_stars">
+                    <img src="./assets/images/star-icon-filled.png" alt="Filled Star">
+                    <img src="./assets/images/star-icon-filled.png" alt="Filled Star">
+                    <img src="./assets/images/star-icon-filled.png" alt="Filled Star">
+                    <img src="./assets/images/star-icon-empty.png" alt="Empty Star">
+                    <img src="./assets/images/star-icon-empty.png" alt="Empty Star">
+                </div>
+            </div>
+
+            <div class="skills_soft_level">
+                <div class="container-img">
+                    <img  class="skills_soft_img" src="./assets/images/AfterEffects.png" alt="After Effects Logo">
+                </div>
+
+                <p class="skills_soft_text">Adobe After Effects</p>
+                
+                <div class="skills_soft_img_stars">
+                    <img src="./assets/images/star-icon-filled.png" alt="Filled Star">
+                    <img src="./assets/images/star-icon-filled.png" alt="Filled Star">
+                    <img src="./assets/images/star-icon-filled.png" alt="Filled Star">
+                    <img src="./assets/images/star-icon-filled.png" alt="Filled Star">
+                    <img src="./assets/images/star-icon-empty.png" alt="Empty Star">
+                </div>
+            </div>
+
+            <div class="skills_soft_level">
+                <div class="container-img">
+                    <img  class="skills_soft_img" src="./assets/images/Figma.png" alt="Figma Logo">
+                   
+                </div>
+
+                 <p class="skills_soft_text">Figma</p>
+
+                <div class="skills_soft_img_stars">
+                    <img src="./assets/images/star-icon-filled.png" alt="Filled Star">
+                    <img src="./assets/images/star-icon-filled.png" alt="Filled Star">
+                    <img src="./assets/images/star-icon-filled.png" alt="Filled Star">
+                    <img src="./assets/images/star-icon-filled.png" alt="Filled Star">
+                    <img src="./assets/images/star-icon-filled.png" alt="Filled Star">
+                </div>
+            </div>
+        </div>
+            
+        </section>
+
+        <section id="portfolio">
+            <div >
+                <h2 >Portfolio</h2>
+                <img  src="./assets/images/Portfolio.svg" alt="Portfolio_img">
+                <a  href="#"><ins>Online fashion store - <br>Homepage</ins> </a> 
+                <img  src="./assets/images/reebok_web.svg" alt="reebok_web">
+                <a  href="#"><ins>Reebok Store - Concept</ins> </a>  
+                <img  src="./assets/images/reebok_web (1).svg" alt="braun">
+                <a  href="#"><ins> Braun Landing Page - Concept</ins> </a>  
+            </div>
+        </section>
+
+    </main>    
+
+    <footer>
+        <section id="contacts">
+            <div >
+                <h2 >Contacts</h2>
+                <p >Want to more or just chat? <br> You are welcome!</p>
+                <button >Send message</button>
+                <div > 
+                    <img  src="./assets/images/LinkedIn.png" alt="LinkedIn">
+                    <img  src="./assets/images/Insta.png" alt="Instagram">
+                    <img  src="./assets/images/BE.png" alt="Behance">
+                    <img  src="./assets/images/Dribble.png" alt="Dribble"></div>
+                    <p >Like me on <br> LinkedIn, Instagram, Behance, <br>Dribble</p>
+                    <a  href="https://github.com/AlexBadger56/Front_Lessons/tree/main/Lesson-5_Figma/Lesson%205_Figma/homework"><ins> Мій репозиторій</ins> </a>
+            </div>
+            
+        </section>
+    </footer>
+   
 </body>
 </html>
