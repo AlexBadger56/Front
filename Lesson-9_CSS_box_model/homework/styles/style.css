@@ -1,14 +1,14 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/fonts/GothamBold.ttf') format('truetype');
+}
+
 .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center start;
     gap: 30px;
 }   
-
-@font-face {
-    font-family: 'Gotham';
-    src: url('../assets/fonts/GothamBold.ttf') format('truetype');
-}
 
 .link {
     color: #2F281E;

@@ -18,8 +18,9 @@ html {
 }
 
 .text-style,
-title {
-font-family: 'Open Sans';
+.title-m,
+.contacts-btn {
+    font-family: 'Open Sans';
 }
 
 .text-style {
@@ -28,8 +29,15 @@ font-family: 'Open Sans';
     text-align: center;
 }
 
+.nav-link {
+    transition: .4s ease-in-out;
+}
+
 .nav-link:hover {
     color: #000000;
+    font-weight: 700;
+  
+    
 }
 
 .title-l {
@@ -45,13 +53,12 @@ font-family: 'Open Sans';
     text-align: center;
 }
 
-#about_me {
+.background-grey {
     background-color: #F6F6F6;
 }
 
 .about_me {
     text-align: center;
-    padding: 100px 0;
     max-width: 480px;
     width: 100%;
     margin: 0 auto;
@@ -69,14 +76,14 @@ img,
 
 img {
     height: auto;
-    /* object-fit: cover; */
+  
 }
 
 .hero-img {
     height: 387px;
 }
 
-.skills {
+.block-padding-100 {
     padding: 100px 0;
 }
 
@@ -88,8 +95,16 @@ img {
     padding-bottom: 30px;
 }
 
+.padding-bottom-40 {
+    padding-bottom: 40px;
+}
+
 .padding-bottom-50 {
     padding-bottom: 50px;
+}
+
+.padding-bottom-60 {
+    padding-bottom: 60px;
 }
 
 .skills_soft {
@@ -118,17 +133,62 @@ img {
     height: 26px;
 }
 
-.skills_soft_text {
+.skills_soft_text,
+.contacts-text {
     font-size: 14px;
     line-height: 19px;
     color: #828282;
+}
+
+.skills_soft_text {
     padding: 25px 0 60px;
 }
 
-.container-img {
+
+.container-img,
+.portfolio,
+.contacts,
+.contacts-content  {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
- 
+.portfolio,
+.contacts-heading {
+    flex-direction: column;
+}
+
+.portfolio-link {
+    text-decoration: underline;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.contacts-img {
+    width: 40px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* button style */
+.contacts-btn {
+    background-color: #070707;
+    border: 1px solid #070707;
+    border-radius: 22px;
+    padding: 10px 16px 10px 16px;
+    width: 180px;
+    color: #FFFFFF;
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+
+.contacts-btn:hover {
+    background-color: #FFFFFF;
+    color: #070707;
+}
+
+.contacts-img:hover {
+    opacity: 0.5;
+    transition: 0.4s;
+}
