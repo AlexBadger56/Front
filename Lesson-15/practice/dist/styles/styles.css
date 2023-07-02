@@ -1,0 +1,56 @@
+.text {
+  letter-spacing: 1px;
+}
+
+.text--gold {
+  color: gold;
+}
+
+.text--gray {
+  color: #898F8F;
+}
+
+.text--dark-gray {
+  color: #666666;
+}
+
+.text--black {
+  color: #333333;
+}
+
+.text--white {
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template: repeat(2, minmax(100px, auto))/repeat(2, minmax(200px, 1fr));
+  grid-template-areas: "header header" "hero about";
+  row-gap: 40px;
+}
+.container__header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.container__title {
+  text-transform: uppercase;
+}
+.container__subtitle {
+  text-transform: lowercase;
+}
+.container__hero {
+  grid-area: hero;
+  width: 430px;
+}
+.container__about {
+  grid-area: about;
+}
+.container__view-btn {
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=styles.css.map */

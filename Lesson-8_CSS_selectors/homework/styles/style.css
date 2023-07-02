@@ -8,7 +8,6 @@
 
 .frame-bckgrnd {
     background: #3B3F45;
-    height: 100vh;
     border-top: 15px #ffffff ridge;
     border-left: 10px #ffffff ridge;
     border-right: 2px #ffffff solid;
@@ -106,16 +105,15 @@ li:active label{
 	color: #C4C8CF;
 }
 
-footer {
-    max-width: 534px;
-    width: 100%;
-    margin: 0 auto;
-}
+
 
 .footer-wrapper {
 	background: #4A4F56;
 	text-align: center;
 	padding: 20px 0;
+    max-width: 534px;
+    width: 100%;
+    margin: 0 auto 40px;
 }
 
 .footer-title {
@@ -124,4 +122,22 @@ footer {
 
 .footer-title::after {
     content: ")";
+}
+
+.homework-btn {
+    display: block;
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid #4A4F56;;
+    background-color: #4A4F56;;
+    color: #FF8984;;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 0.4s ease;
+    margin: 0 auto 40px ;
+}
+
+.homework-btn:hover {
+    background-color: white;
+    color: #4A4F56;
 }

@@ -1,0 +1,44 @@
+@use './variables' as var;
+@use './text' as text;
+
+.container {
+    display: grid;
+    grid-template: repeat(2, minmax(100px, auto))/ repeat(2, minmax(200px, 1fr));
+    grid-template-areas: 
+    "header header"
+    "hero about";
+    row-gap: 40px;
+
+    &__header {
+        grid-area: header;
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        justify-content: center;
+        gap: 10px   ;
+    }
+
+    &__title {
+        @include text.transform-text(uppercase);
+    }
+
+    &__subtitle {
+        @include text.text-lowercase;
+    }
+
+
+    &__hero {
+        grid-area: hero;
+        width: 430px;
+    }
+
+    &__about{
+        grid-area: about;
+    }
+
+    &__view-btn {
+        @include text.text-uppercase;
+    }
+
+}
+
