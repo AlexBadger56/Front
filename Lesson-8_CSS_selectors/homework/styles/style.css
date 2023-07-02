@@ -13,6 +13,7 @@
     border-right: 2px #ffffff solid;
     border-bottom: 2px #ffffff solid;
     font-family: 'Roboto';
+    height: 100vh;
 }
 
 .title {
@@ -61,7 +62,7 @@ li {
 span {
     display: inline-flex;
     align-items: center;
-    /* gap: 10px; */
+  
 }
 
 small {
