@@ -1,0 +1,147 @@
+@import './fonts';
+@import './variables';
+
+h1, 
+h2 {
+    font-family: $f-delius-unicase;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.container {
+    max-width: 1210px;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.wrapper {
+    padding: 120px 20px;
+}
+
+.photography {
+    margin-bottom: 120px;
+}
+
+
+
+.line-gradient {
+    background-image: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 
+    34.11%, rgba(187, 186, 192, 0.26) 62.50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.6s ease;
+}
+
+.buttons {
+    display: none;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+}
+
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: background-image 0.6s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.50);
+
+        .line-gradient {
+            background-image: linear-gradient(0deg, #241F24 1.04%, 
+            rgba(91, 91, 91, 0.26) 6.99%, rgba(187, 186, 192, 0.00) 12.29%);
+            justify-content: space-between;
+            
+            
+            .buttons {
+                display: flex;
+            }
+        }
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(224, 224, 224, 0.50);
+    transition: 0.4s ease;
+
+    &:hover {
+        background-color: #e0e0e0;
+        cursor: url("../assets/images/hand-point-up.svg"), auto;
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+.author {
+    font-weight: 500;
+}
+
+.date {
+    color: #E0E0E0;
+}
+
+.block {
+   &-architectural {
+    display: grid;
+    grid-template: repeat(3, 370px) / repeat(3, 1fr);
+    gap: 30px;
+    
+    &__wide {
+        &-1 {
+            grid-area: 1/2/1/4;
+            background-image: url("../assets/images/tom-w.png");
+        }
+
+        &-2 {
+            grid-area: 2/1/2/3;
+            background-image: url("../assets/images/johan-mouchet.png");
+        }
+
+        &-3 {
+            grid-area: 3/2/3/4;
+            background-image: url("../assets/images/alexander-rotker.png");
+        }
+    }
+
+    &__normal {
+        &-1 {
+            background-image: url("../assets/images/jezael-melgoza.png");
+        }
+
+        &-2 {
+            background-image: url("../assets/images/federico-di-dio.png");
+        }
+
+        &-3 {
+            background-image: url("../assets/images/casey-horner.png");
+        }
+    }
+   }
+   &-still-life {
+    display: flex;
+   }
+}
+
