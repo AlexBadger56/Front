@@ -124,7 +124,80 @@ h2 {
   background-image: url("../assets/images/casey-horner.png");
 }
 .block-still-life {
-  display: flex;
+  display: grid;
+  grid-template: repeat(4, 370px)/repeat(3, 1fr);
+  gap: 30px;
+  grid-template-areas: "robert sean sean" "john john dave" "john john dave" "leonard leonard rob";
+}
+.block-still-life__wide-1 {
+  grid-area: sean;
+  background-image: url(../assets/images/sean-oulashin.png);
+}
+.block-still-life__wide-2 {
+  grid-area: john;
+  background-image: url(../assets/images/john-fowler.png);
+}
+.block-still-life__wide-3 {
+  grid-area: dave;
+  background-image: url(../assets/images/dave-hoefler.png);
+}
+.block-still-life__wide-4 {
+  grid-area: leonard;
+  background-image: url(../assets/images/leonard-cotte.png);
+}
+.block-still-life__normal-1 {
+  grid-area: robert;
+  background-image: url(../assets/images/robrt-lukeman.png);
+}
+.block-still-life__normal-2 {
+  grid-area: rob;
+  background-image: url(../assets/images/rob-mulally.png);
+}
+.block-portrait-fashion {
+  display: grid;
+  grid-template: repeat(5, 370px)/repeat(3, 1fr);
+  gap: 30px;
+  grid-template-areas: "pooja dom seth" "devn dom noah" "sincerely doyle noah" "sincerely melissa melissa" "brooke brooke clem";
+}
+.block-portrait-fashion__wide-1 {
+  grid-area: dom;
+  background-image: url(../assets/images/dom-hill.png);
+}
+.block-portrait-fashion__wide-2 {
+  grid-area: noah;
+  background-image: url(../assets/images/noah-buscher.png);
+}
+.block-portrait-fashion__wide-3 {
+  grid-area: sincerely;
+  background-image: url(../assets/images/sincerely-media.png);
+}
+.block-portrait-fashion__wide-4 {
+  grid-area: melissa;
+  background-image: url(../assets/images/melissa-askew.png);
+}
+.block-portrait-fashion__wide-5 {
+  grid-area: brooke;
+  background-image: url(../assets/images/brooke-cagle.png);
+}
+.block-portrait-fashion__normal-1 {
+  grid-area: pooja;
+  background-image: url(../assets/images/pooja-chaudhary.png);
+}
+.block-portrait-fashion__normal-2 {
+  grid-area: seth;
+  background-image: url(../assets/images/seth-doyle.png);
+}
+.block-portrait-fashion__normal-3 {
+  grid-area: devn;
+  background-image: url(../assets/images/devn.png);
+}
+.block-portrait-fashion__normal-4 {
+  grid-area: doyle;
+  background-image: url(../assets/images/seth-doyle-1.png);
+}
+.block-portrait-fashion__normal-5 {
+  grid-area: clem;
+  background-image: url(../assets/images/clem-onojeghuo.png);
 }
 
 /*# sourceMappingURL=style.css.map */
