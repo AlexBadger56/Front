@@ -10,6 +10,8 @@
     display: flex;
     justify-content: space-between;
     padding: 20px 15px;
+    font-family: 'Lato', sans-serif;
+ 
 }
 
 .navigation {
@@ -20,8 +22,27 @@
     &__menu {
         display: flex;
         gap: 42px;
+
+        // &--active {
+
+        // }
+    }
+
+    &__hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 34px;
+        height: 20px;
+    }
+
+    &__hamburger-line {
+        width: 100%;
+        height: 1px;
+        background-color: black;
     }
 }
+
 
 .first-screen {
     height: 600px;
@@ -61,11 +82,122 @@
     }
 
     &__img--arrow {
-        background-image: url(../assets/images/blog-image.png);
+        background-image: url('../assets/images/blog-image.png');
     }
 
     &__img--house {
-        background-image: url(../assets/images/Image.png);
+        background-image: url('../assets/images/bg-image.png');
+    }
+}
+
+.latest-posts {
+    &__title {
+        margin-bottom: 50px;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+   }
+
+.post {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    
+    flex-shrink: 0;
+
+    &--latest {
+    width: 370px;
+    height: 500px;
+    gap: 25px;
+    }   
+
+    &--popular {
+        width: 570px;
+        height: 500px;
+        gap: 20px;
+    }
+
+    &__img {
+        background-position: center;
+        background-size: cover;
+        
+        flex-shrink: 0;
+    }
+
+    &__img--post {
+        width: 370px;
+        height: 240px;
+    }
+
+    &__img--popular {
+        width: 570px;
+        height: 500px;
+    }
+
+    &__img--lamp {
+        background-image: url('../assets/images/image\(1\).png');   
+     }
+
+     &__img--arrow {
+        background-image: url('../assets/images/image-1\(1\).png');   
+     }
+
+     &__img--roof {
+        background-image: url('../assets/images/Image\(2\).png');   
+     }
+
+     &__img--popular--lamp {
+        background-image: url('../assets/images/Image-1.png');
+     }
+
+     &__img--popular--wall {
+        background-image: url('../assets/images/Image-2.png');
+     }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    &__content {
+        display: flex;
+        width: 370px;
+        height: 156px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        flex-shrink: 0;
+    }
+
+    &__description {
+        display: flex;  
+        width: 370px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
+.most-popular {
+    &__title {
+        font-family: 'Red Hat Display', sans-serif;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 500px;
+        align-items: flex-start;
+        gap: 30px;
     }
 }
 
@@ -78,6 +210,10 @@
         padding-inline: 34px;
     }
 
+    .navigation__hamburger {
+        display: flex;
+    }
+
     .blog__img {
         width: 50%;
         height: 280px;
@@ -85,6 +221,28 @@
 
     .navigation__menu {
         display: none;
+    }
+
+    .latest-posts__body {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .post {
+        flex-direction: row;
+        width: 100%;
+        height: 240px;
+        margin-bottom: 30px;
+
+        &--reverse {
+            flex-direction: row-reverse;
+        }
+
+        &__img,
+        &__content {
+            width: 50%;
+        }
     }
 }
 
@@ -95,6 +253,10 @@
 
    .navigation__menu {
     display: none;
+}
+
+.navigation__hamburger {
+    display: flex;
 }
 
     .blog {
@@ -112,4 +274,11 @@
         width: 260px;
     }
 
-}
+    .latest-posts__body {
+        flex-direction: column;
+        gap: 30px;
+
+        align-items: center;
+    }
+
+    }

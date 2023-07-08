@@ -1,0 +1,54 @@
+
+.text {
+    font-family: Lato;
+    color: #3C3C3C;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    &-title,
+    &-subtitle {
+        font-weight: 700;
+        
+    }
+
+    &-title,
+    &-s {
+        text-align: center;
+    }
+
+    &-title {
+        font-size: 34px;
+    }
+
+    &-subtitle {
+        font-size: 18px;
+        color: #282528;
+        text-align: left;
+        text-transform: none;
+        margin: 20px 0 0;
+    }
+
+    &-subtitle,
+    &-description{
+        text-align: left;
+    }
+    
+
+    &-s,
+    &-description {
+        font-family: Lato-light;
+        font-weight: 300;
+        text-transform: none;
+    }
+
+    &-s {
+        font-size: 16px;
+    }
+    
+
+    &-description {
+        font-size: 18px;
+      
+    }
+}

@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <header class="navigation-wrapper">
-      <h2>manifest</h2>
-      <nav class="navigation">
-        <div class="navigation__menu">
-          <a href="#">home</a>
-          <a href="#">about</a>
-          <a href="#">works</a>
-          <a href="#">blog</a>
-          <a href="#">contact</a>
-        </div>
-        <img src="" alt="Search img" />
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Red+Hat+Display:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <title>Lessons 17</title>
+</head>
 
-    <section class="first-screen">
-      <h1 class="first-screen__title">
-        Manifest is a newborn theme. Clean, simple and fast.
-      </h1>
-    </section>
+<body>
+  <header class="navigation-wrapper">
+    <h2>manifest</h2>
+    <nav class="navigation">
+      <div id="navigation-menu" class="navigation__menu">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">works</a>
+        <a href="#">blog</a>
+        <a href="#">contact</a>
+      </div>
+      <img src="../practice/assets/images/search.png" alt="Search img" />
+      <div id="menu-humburger" class="navigation__hamburger">
+        <div class="navigation__hamburger-line"></div>
+        <div class="navigation__hamburger-line"></div>
+        <div class="navigation__hamburger-line"></div>
+      </div>
+    </nav>
+  </header>
 
-    <main class="main-wrapper">
-        <section class="blog-wrapper">
-            <h3>Blog</h3>
+  <section class="first-screen">
+    <h1 class="first-screen__title">
+      Manifest is a newborn theme. Clean, simple and fast.
+    </h1>
+  </section>
+
+  <main class="main-wrapper">
+    <section class="blog-wrapper">
+      <h3>Blog</h3>
 
       <section class="blog-wrapper">
         <article class="blog">
@@ -62,8 +73,101 @@
           <section class="blog__img blog__img--house"></section>
         </article>
       </section>
-        </section>
-      
-    </main>
-  </body>
+    </section>
+
+
+    <!-- Latest posts -->
+    <section class="latest-posts">
+      <h3 class="latest-posts__title">Latest Posts</h3>
+
+      <div class="latest-posts__body">
+        <div class="post post--latest">
+          <div class="post__img post__img--post post__img--lamp"></div>
+
+          <div class="post__content">
+            <div class="post__header">
+              <span>Interface Design</span>
+              <span>8 June, 2020</span>
+            </div>
+            <h4>UX traffic light colours</h4>
+            <p>UI has to make a huge visual difference between warning, an alert and a success.</p>
+          </div>
+        </div>
+
+
+        <div class="post post--reverse">
+          <div class="post__img post__img--post post__img--arrow"></div>
+
+          <div class="post__content">
+            <div class="post__header">
+              <span>Technology</span>
+              <span>6 May, 2020</span>
+            </div>
+            <h4>Using UX Design to Build a Sustainable Future</h4>
+            <p>UI has to make a huge visual difference between warning, an alert and a success.</p>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <div class="post__img post__img--post  post__img--roof"></div>
+
+          <div class="post__content">
+            <div class="post__header">
+              <span>Visual Design</span>
+              <span>8 June, 2020</span>
+            </div>
+            <h4>Creativity vs. UX </h4>
+            <p>Is it possible to create a delightful user experience without following best UX practices?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Most popular -->
+    <!-- <section class="most-popular">
+      <h3 class="most-popular__title">The Most Popular</h3>
+
+      <div class="most-popular__body">
+        <div class="most-popular__body">
+          <div class="post post--popular">
+            <div class="post__img post__img--popular--lamp post__img--popular"></div>
+
+            <div class="post__content">
+              <div class="post__header">
+                <span>Interface Design</span>
+                <span>8 June, 2020</span>
+              </div>
+              <h4>UX traffic light colours</h4>
+              <p>UI has to make a huge visual difference between warning, an alert and a success.</p>
+            </div>
+          </div>
+
+          <div class="post post--popular">
+          <div class="post__img post__img--popular--wall post__img--popular"></div>
+
+          <div class="post__content">
+            <div class="post__header">
+              <span>Interface Design</span>
+              <span>8 June, 2020</span>
+            </div>
+            <h4>UX traffic light colours</h4>
+            <p>UI has to make a huge visual difference between warning, an alert and a success.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section> -->
+
+  </main>
+
+  <script>
+    const menuHamburger = document.getElementById('menu-hamburger');
+    constnavigationMenu = document.getElementById('navigation-menu');
+    menuHamburger.addEventListener('click', () => {
+      navigationMenu.classList.toggle('navigation__menu--active')
+    })
+  </script>
+</body>
+
 </html>
