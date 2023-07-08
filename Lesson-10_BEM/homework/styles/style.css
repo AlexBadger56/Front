@@ -125,6 +125,11 @@
   transition: 0.5s ease;
   cursor: url("../assets/images/cursor.png"), auto;
 }
+.navigation__btn-repo {
+  width: 200px;
+  height: 60px;
+  padding: 20px;
+}
 
 .main-wrapper {
   display: flex;
