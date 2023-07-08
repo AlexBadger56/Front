@@ -88,6 +88,12 @@
             transition: 0.5s ease;
             cursor: url("../assets/images/cursor.png"), auto;
         }
+
+        &-repo {
+            width: 200px;
+            height: 60px;
+            padding: 20px;
+        }
     }
 }
 
