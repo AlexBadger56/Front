@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass:watch": "npx sass --watch ./app/scss:./dist/styles"
+    "start": "npx sass --watch ./assets/scss:./dist/styles"
   },
   "keywords": [],
   "author": "",
@@ -12,4 +12,5 @@
   "devDependencies": {
     "sass": "^1.63.6"
   }
+  
 }
