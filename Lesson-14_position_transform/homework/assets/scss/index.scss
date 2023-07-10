@@ -1,0 +1,126 @@
+@use './_text';
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.header {
+    
+    position: fixed;
+    background-color: #FFFFFF;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 13px 0;
+    z-index: 2;
+    
+    
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+
+    &_nav {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+       &-logo {
+        display: flex;
+        
+        &:hover {
+            opacity: 0.7;
+            transition: 0.5s ease;
+        }
+       } 
+    }
+
+}
+
+.wrapper-content {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.img-wrapper {
+    position: fixed;
+    top: 15%;
+    right: 0;
+    z-index: 0;
+}
+
+a:hover {
+    text-shadow: 2px 2px gray;
+    transition: 0.4s ease;
+}
+
+.main__wrapper {
+    position: relative;
+    display: flex;
+    padding-top: 100px;
+    width: 100%;    
+    z-index: 1;
+
+    .sidebar {
+        max-width: 385px;
+        width: 100%;
+        padding: 10px;
+        margin-right: 30px;
+
+        &__wrapper {
+            position: sticky;
+            top: 100px;
+        }
+        
+        &__title {
+            padding-bottom: 10px;
+            margin-bottom: 70px;
+            border-bottom: 1px solid #BDBDBD;
+        }
+    }
+}
+
+.content {
+    max-width: 785px;
+    width: 100%;
+}
+
+.chapter {
+    margin-bottom: 70px;
+
+    &__divider {
+        display: flex;
+        position: relative;
+        padding-top: 28px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 100px;
+            height: 8px;
+            background-color: black;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__title {
+        display: flex;
+        gap: 10px;
+        padding-bottom: 40px;
+    }
+
+    &__content {
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+    }
+}
+
+mark {
+    background-color: #DADADA;
+}
