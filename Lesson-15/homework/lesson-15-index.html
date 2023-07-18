@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/styles/reset.css">
+    <link rel="stylesheet" href="./dist/styles/index.css">
+    <title>Styling forms</title>
+</head>
+
+<body>
+
+    <main class="main__wrapper">
+        <section class="creation-form">
+            <h1 class="creation-form__title title">Create an Account</h1>
+    
+            <form >
+
+                <!-- Inputs + blue focus -->
+                <div class="creation-form__input">
+                    <div class="creation-form__input-container">
+                        <label class="label" for="name">First Name</label>
+                        <input class="creation-form__input-block" type="text" id="name" required>
+                    </div>
+                    
+                    <div class="creation-form__input-container">
+                        <label class="label" for="last-name">Last Name</label>
+                        <input class="creation-form__input-block" type="text" id="last-name" required>
+                    </div>
+                </div>
+                    
+                <div class="creation-form__input-container">
+                    <label class="label" for="email">E-mail</label>
+                    <input class="creation-form__input-block creation-form__input-block-email" id="email" name="email" type="email" required>    
+                    <p class="hint">We'll never share your email with anyone else.</p>
+                </div>
+                
+                <!-- Custom radio -->
+                <div class="creation-form__input creation-form__input-radio">
+                    
+                    <label class="radio radio-text">
+                        <input type="radio" name="gender" id="male" required>
+                        Male
+                        <span></span>
+                    </label>
+
+                    <label class="radio radio-text">
+                        <input type="radio" name="gender" id="female" required>
+                        Female
+                        <span></span>
+                    </label>
+                </div>
+                
+                <!-- Custom select -->
+                <div class="creation-form__input">
+                    <div class="creation-form__input-container">
+                        <label class="label" for="country">Country</label>
+                        <select class="creation-form__input-block" name="country" id="country" required>
+                        <option  selected disabled> <span class="option">Select</span></option>
+                        </select>
+                    </div>
+                    
+                    <div class="creation-form__input-container">
+                        <label class="label" for="city">City</label>
+                        <input class="creation-form__input-block" type="text" name="city" id="city" required>
+                    </div>
+    
+                </div>
+    
+                <div class="creation-form__terms">
+                    <a href="#"><button class="creation-form__input-block-btn label">Sign up</button></a>
+                    <p class="label-terms">By clicking the 'Sign Up' button, you confirm that you accept our
+                        and. <br> <a class="label-links" href="#">Terms of Use</a>  and <a class="label-links" href="#">Privacy Policy</a></p>
+                </div>      
+            </form>
+            
+        </section>    
+    </main>
+
+    <footer class="footer__wrapper">
+        <div class="footer__divider"></div>
+        <div class="footer__log-in">
+            <p class="label footer-text">Have an account?</p>
+            <a class="label-links" href="#">Log in</a>
+        </div>
+    </footer>
+        
+</body>
+</html>

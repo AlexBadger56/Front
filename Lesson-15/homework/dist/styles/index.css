@@ -1,0 +1,230 @@
+@font-face {
+  font-family: roboto-r;
+  src: url("../../assets/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: roboto-m;
+  src: url("../../assets/fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../assets/fonts/Inter-Regular.ttf");
+}
+.title,
+.hint,
+.label,
+.radio-text {
+  font-family: "roboto-r";
+  font-weight: 400;
+  text-align: left;
+}
+
+.hint {
+  color: #969696;
+  letter-spacing: -0.1px;
+  line-height: 18px;
+  font-size: 13px;
+  padding: 7px 0 20px;
+}
+
+.option {
+  font-family: Inter;
+  font-weight: 400;
+  text-align: left;
+}
+
+.label,
+.option,
+.radio-text {
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  padding-bottom: 7px;
+  color: #545454;
+}
+.label-terms,
+.option-terms,
+.radio-text-terms {
+  color: #969696;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 138.462% */
+  letter-spacing: -0.1px;
+}
+.label-links,
+.option-links,
+.radio-text-links {
+  color: #007BFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  padding: 0 5px;
+}
+
+.title {
+  font-family: "roboto-m";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: #1c1c1c;
+}
+
+.footer-text,
+.radio-text {
+  padding-bottom: 0;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main__wrapper {
+  width: 570px;
+  padding: 35px 35px 20px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+.creation-form {
+  display: flex;
+  flex-direction: column;
+}
+.creation-form__title {
+  padding-bottom: 20px;
+}
+.creation-form__terms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 410px;
+  margin: 0 auto;
+}
+.creation-form__input {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 20px;
+}
+.creation-form__input-block {
+  width: 245px;
+  height: 38px;
+  border: 1px solid #E4E4E4;
+  border-radius: 5px;
+}
+.creation-form__input-block:focus {
+  outline: none;
+  border-color: #007BFF;
+  transition: 0.6s ease-in-out;
+}
+.creation-form__input-block:has(> .creation-form__input-block:invalid)::after {
+  border-color: red;
+}
+.creation-form__input-block-email {
+  width: 500px;
+}
+.creation-form__input-block-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  width: 500px;
+  height: 38px;
+  background-color: #007BFF;
+  color: #E4E4E4;
+  border: 1px solid #007BFF;
+  border-radius: 5px;
+  padding: 0;
+  margin-bottom: 22px;
+}
+.creation-form__input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.radio {
+  text-transform: capitalize;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.radio + .radio {
+  margin-left: 20px;
+}
+
+.radio input[type=radio] {
+  display: none;
+}
+.radio input[type=radio]:checked ~ span {
+  background: #007BFF;
+}
+.radio input[type=radio]:checked ~ span::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.radio span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #E4E4E4;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.2s ease-in-out;
+}
+.radio span:hover {
+  border-color: #007BFF;
+}
+.radio span::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #FFFFFF;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: 0.3s ease-in-out 0s;
+}
+
+.footer__divider {
+  display: flex;
+  width: 500px;
+  height: 1px;
+  background-color: #E4E4E4;
+  margin: 0 auto 20px;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  margin: 0 auto 20px;
+  background-color: #FFFFFF;
+}
+.footer__log-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 177px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=index.css.map */
