@@ -1,0 +1,155 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.header__wrapper {
+  max-width: 1920px;
+  height: 862px;
+  width: 100%;
+  background-image: url("../../assets/images/HeaderBackground.png");
+}
+.header__content {
+  margin: 295px auto 48px;
+}
+.header__scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 260px auto 120px;
+}
+
+.main {
+  max-width: 1920px;
+  height: 862px;
+  width: 100%;
+  color: white;
+}
+.main__wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.navigation {
+  background-color: #5373FD;
+}
+.navigation__conteiner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.navigation__links {
+  display: flex;
+  padding: 10px;
+  gap: 40px;
+}
+
+.btn {
+  width: 213px;
+  height: 60px;
+  gap: 10px;
+  background-color: #5373FD;
+  color: #FFFFFF;
+}
+
+.choose-us {
+  display: flex;
+  width: 100%;
+  height: 704px;
+  background-image: url("../../assets/images/WhyBackground.png");
+}
+.choose-us__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 648px;
+  width: 100%;
+  height: 324px;
+  margin: 190px 0;
+  row-gap: 32px;
+}
+.choose-us__container {
+  display: flex;
+  flex-direction: column;
+  margin: 124px 112px 136px;
+  max-width: 424px;
+  width: 100%;
+}
+.choose-us__img {
+  width: 350px;
+  height: 220px;
+}
+.choose-us__img-top {
+  padding-right: 84px;
+  padding-bottom: 16px;
+}
+.choose-us__img-bot {
+  padding-left: 84px;
+}
+
+.steps {
+  background-color: #333;
+}
+.steps__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.steps__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 424px;
+  height: 134px;
+  margin: 107px 0 60px;
+}
+
+.spain {
+  display: flex;
+  height: 684px;
+  flex-direction: column;
+  background-image: url("../../assets/images/render-1477041_1280 1.png");
+}
+.spain--bg {
+  background-image: url("../../assets/images/spain-1859434_1280 1.png");
+}
+.spain__container {
+  display: flex;
+  flex-direction: column;
+  width: 648px;
+  height: 344px;
+  background-color: rgba(35, 35, 35, 0.8980392157);
+  margin: 220px 0 120px;
+  padding: 44px 32px;
+  row-gap: 16px;
+}
+.spain__container--right {
+  margin-left: 672px;
+}
+
+.tourists-say {
+  height: 680px;
+  width: 100%;
+  background-image: url("../../assets/images/BG.png");
+}
+.tourists-say__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 120px auto 180px;
+}
+.tourists-say__content-text {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 60px;
+  row-gap: 10px;
+}
+.tourists-say__container {
+  display: flex;
+}
+
+/*# sourceMappingURL=index.css.map */

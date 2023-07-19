@@ -17,15 +17,18 @@
     padding: 7px 0 20px;
 }
 
-.option {
+select {
 font-family: Inter;
 font-weight: 400;
 text-align: left;
 
+&:not(:checked) {
+    opacity: .5;
+}
 }
 
-.label, 
-.option,
+.label,
+select,
 .radio-text {
     font-size: 15px;
     line-height: 22px;
@@ -56,6 +59,7 @@ text-align: left;
         padding: 0 5px;
     }
 }
+
 
 .title {
     font-family: 'roboto-m';

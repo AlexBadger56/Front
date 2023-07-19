@@ -39,13 +39,13 @@
                 <div class="creation-form__input creation-form__input-radio">
                     
                     <label class="radio radio-text">
-                        <input type="radio" name="gender" id="male" required>
+                        <input type="radio" name="gender"  value="male" id="male" required>
                         Male
                         <span></span>
                     </label>
 
                     <label class="radio radio-text">
-                        <input type="radio" name="gender" id="female" required>
+                        <input type="radio" name="gender" value="female" id="female">
                         Female
                         <span></span>
                     </label>
@@ -53,11 +53,14 @@
                 
                 <!-- Custom select -->
                 <div class="creation-form__input">
-                    <div class="creation-form__input-container">
-                        <label class="label" for="country">Country</label>
+                    <div class="creation-form__input-container select">
+                        <label class="label " for="country">Country</label>
                         <select class="creation-form__input-block" name="country" id="country" required>
-                        <option  selected disabled> <span class="option">Select</span></option>
-                        </select>
+                        <option  selected disabled hidden value=""> <span>Select</span></option>
+                        <option  value="1"> <span>Ukraine</span></option>
+                        <option  value="2"> <span>Not Ukraine</span></option>
+                    
+                    </select>
                     </div>
                     
                     <div class="creation-form__input-container">

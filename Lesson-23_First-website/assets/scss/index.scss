@@ -1,0 +1,175 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    &__wrapper {
+        max-width: 1920px;
+        height: 862px;
+        width: 100%;
+        background-image: url('../../assets/images/HeaderBackground.png');
+    }
+
+    &__content {
+        margin: 295px auto 48px;
+    }
+
+    &__scroll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 260px auto 120px;
+    }
+}   
+
+.main {
+        max-width: 1920px;
+        height: 862px;
+        width: 100%;
+        color: white;
+
+    &__wrapper {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1300px;
+        padding: 0 10px;
+        width: 100%;
+    }
+}
+
+.navigation {
+    background-color: #5373FD;
+
+    &__conteiner {
+    display: flex;  
+    width: 100%;
+    justify-content: space-between;
+    }
+
+    &__links {
+        display: flex;
+        padding: 10px;
+        gap: 40px;
+    }
+}
+
+.btn {
+    width: 213px;
+    height: 60px;
+    gap: 10px;
+    background-color: #5373FD;
+    color: #FFFFFF;
+}
+
+.choose-us {
+    display: flex;
+    width: 100%;
+    height: 704px;
+    background-image: url('../../assets/images/WhyBackground.png');
+
+    
+    &__content {
+        display: flex;
+        flex-direction: column; 
+        max-width: 648px;
+        width: 100%;
+        height: 324px;
+        margin: 190px 0;
+        row-gap: 32px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column; 
+        margin: 124px 112px 136px;
+        max-width: 424px;
+        width: 100%;
+    }
+
+    &__img {
+        width: 350px;
+        height: 220px;
+
+        &-top {
+            padding-right: 84px;
+            padding-bottom: 16px;
+        }
+
+        &-bot {
+        padding-left: 84px;
+        }
+    }
+}
+
+.steps {
+    background-color: #333;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        width: 100% ;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 424px;
+        height: 134px;
+        margin: 107px 0 60px;
+
+    }
+}
+
+.spain {
+    display: flex;
+    height: 684px;
+    flex-direction: column;
+    background-image: url('../../assets/images/render-1477041_1280\ 1.png');
+
+    &--bg {
+        background-image: url('../../assets/images/spain-1859434_1280\ 1.png');
+    }
+
+    &__container{   
+        display: flex;
+        flex-direction: column;
+        width: 648px;
+        height: 344px;
+        background-color: #232323E5;
+        margin: 220px 0 120px;
+        padding: 44px 32px;
+        row-gap: 16px;
+        
+        &--right {
+            margin-left: 672px;
+        }
+    }
+}
+
+.tourists-say {
+    height: 680px;
+    width: 100%;
+    background-image: url('../../assets/images/BG.png');
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 120px auto 180px;
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            padding: 48px 60px;
+            row-gap: 10px;
+        }
+    }
+
+    &__container {
+        display: flex;
+
+    }
+}

@@ -43,7 +43,10 @@
             height: 38px;
             border: 1px solid #E4E4E4;
             border-radius: 5px;
-            ;
+            padding: 10px;
+            appearance: none;
+            background-color: transparent;
+            cursor: pointer;
 
             &:focus {
                 outline: none;
@@ -51,13 +54,7 @@
                 transition: .6s ease-in-out
             }
 
-            &:has(> &:invalid)::after {
-                border-color: red;
-            }
-
-            // .form__field:has(> .form__control:invalid)::after {
-            //     border-bottom-color: var(--warn-color);
-            // }
+            
 
             &-email {
                 width: 500px;
@@ -83,9 +80,43 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-
+        
         }
     }
+}
+
+.select {
+    position: relative;
+}
+
+.select::before {
+    content: '';
+    position: absolute; 
+    transform: translateY(-50%);
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5.25px 5.25px 5.25px;
+    border-color: transparent transparent #969696 transparent;
+    top: 70%;
+    right: 5px;
+    pointer-events: none;
+}
+
+.select::after {
+    content: '';
+    position: absolute; 
+    transform: translateY(-50%);
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5.25px 5.25px 0 5.25px;
+    border-color: #969696 transparent transparent transparent;
+    top: 80%;
+    right: 5px;
+    pointer-events: none;
 }
 
 // custom radio buttons
