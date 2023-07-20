@@ -1,0 +1,54 @@
+.footer {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: black;
+  color: white;
+  padding: 80px 0;
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__logo {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2.8px;
+  }
+
+  &__social-links {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  &__link {
+    margin-right: 32px;
+    height: 32px;
+    width: auto;
+
+    svg path {
+      transition: 0.4s ease;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      opacity: 1;
+
+      svg path {
+        fill: #5373FD;
+      }
+    }
+  }
+}

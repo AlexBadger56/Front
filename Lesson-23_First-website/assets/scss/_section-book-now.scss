@@ -1,0 +1,66 @@
+.book-now {
+  padding: 220px 0 120px;
+
+  @media (max-width: 768px) {
+    padding: 120px 0;
+  }
+
+  &--left {
+    background-image: url(../../assets/images/book-left.png);
+  }
+
+  &--right {
+    background-image: url(../../assets/images/book-right.png);
+
+    .book-now__wrapper {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__content {
+    font-family: "Josefin Sans", sans-serif;
+    background: rgba(35, 35, 35, 0.90);
+    padding: 44px 32px;
+    max-width: 584px;
+    width: 100%;
+
+    @media (max-width: 1360px) {
+      max-width: 494px;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 486px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: fit-content;
+    }
+  }
+
+  &__suptitle {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin: 0 0 16px;
+  }
+
+  &__text {
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 1.6px;
+    margin-bottom: 24px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 28px;
+    }
+  }
+}

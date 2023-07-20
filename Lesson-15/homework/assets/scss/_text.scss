@@ -1,0 +1,76 @@
+@use "./fonts";
+
+.title,
+.hint,
+.label,
+.radio-text {
+    font-family: 'roboto-r';
+    font-weight: 400;
+    text-align: left;
+}
+
+.hint {
+    color: #969696;
+    letter-spacing: -0.1px;
+    line-height: 18px;
+    font-size: 13px;
+    padding: 7px 0 20px;
+}
+
+select {
+font-family: Inter;
+font-weight: 400;
+text-align: left;
+
+&:not(:checked) {
+    opacity: .5;
+}
+}
+
+.label,
+select,
+.radio-text {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    padding-bottom: 7px;
+    color: #545454;
+
+    &-terms {
+        color: #969696;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px; /* 138.462% */
+        letter-spacing: -0.1px;
+    }
+
+    &-links {
+        color: #007BFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px; 
+        letter-spacing: -0.1px;
+        padding: 0 5px;
+    }
+}
+
+
+.title {
+    font-family: 'roboto-m';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0;
+    color: #1c1c1c;  
+}
+
+.footer-text,
+.radio-text {
+    padding-bottom: 0;
+}
