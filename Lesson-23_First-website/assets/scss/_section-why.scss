@@ -1,0 +1,121 @@
+.why {
+  background-image: url(../../assets/images/why-bg.png);
+  padding: 124px 0;
+
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1208px;
+    width: 100%;
+
+    @media (max-width: 900px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__content {
+    max-width: 648px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 1360px) {
+      max-width: 558px;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 550px;
+    }
+
+    @media (max-width: 900px) {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 1.6px;
+    margin-bottom: 32px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+    @media (max-width: 900px) {
+      margin-bottom: 32px;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 0;
+    }
+  }
+
+  &__img {
+    width: 350px;
+    height: 220px;
+
+    @media (max-width: 900px) {
+      max-width: 348px;
+      width: 100%;
+      height: 219px;
+    }
+
+    @media (max-width: 767px) {
+      height: auto;
+    }
+
+    img {
+      @media (max-width: 767px) {
+        height: auto;
+      }
+    }
+
+    &--top {
+      margin-bottom: 16px;
+
+      @media (max-width: 900px) {
+        margin: 0;
+        padding-right: 12px;
+      }
+    }
+
+    &--bottom {
+      margin-left: 74px;
+
+      @media (max-width: 1360px) {
+        margin-left: 111px;
+      }
+
+      @media (max-width: 1100px) {
+        margin-left: 36px;
+      }
+
+      @media (max-width: 900px) {
+        margin: 0;
+        padding-left: 12px;
+      }
+    }
+  }
+}
