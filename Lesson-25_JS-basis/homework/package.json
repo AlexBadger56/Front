@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.64.1"
+  },
+  "name": "homework",
+  "version": "1.0.0",
+  "main": "hw-script.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "npx sass -w ./styles:./dist/styles"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
