@@ -7,13 +7,13 @@
 }
 
 body {
-        background-color: cadetblue;
+        background-color: lightgrey;
 }
 
 .wrapper {
     display: flex;
     justify-content: center;
-    margin: 30px auto;
+    margin: 250px auto;
 
 }
 
@@ -24,11 +24,18 @@ body {
     width: 300px;
     height: 150px;
     border: 1px solid lightgrey;
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 10px;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
-    color: black;
-    background-color: lightgrey;
+    color: lightgray;
+    background-color: cadetblue;
+    transition: .5s ease-in-out;
+
+    &:hover {
+        background-color: lightgrey;
+        color: cadetblue;
+        border-color: cadetblue;
+    }
 }
