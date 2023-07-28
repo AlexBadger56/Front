@@ -47,6 +47,7 @@
             appearance: none;
             background-color: transparent;
             cursor: pointer;
+            font-family: roboto-r, serif;
 
             &:focus {
                 outline: none;
@@ -199,6 +200,6 @@
         justify-content: space-between;
         align-items: center;
         width: 177px;
-        margin: 0 auto;
+        margin: 0 auto 15px;
 }
 }
