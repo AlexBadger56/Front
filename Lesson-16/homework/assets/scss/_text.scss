@@ -1,0 +1,56 @@
+@use './fonts';
+
+@mixin blue-text {
+    color: #16133D; 
+}
+
+.logo__title {
+    font-family: Quicksand;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+    @include blue-text;
+}
+
+.cards__title,
+.main__suptitle,
+.link {
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    @include blue-text;
+}
+
+.cards__title {
+    font-size: 24px;
+    letter-spacing: 0.25px;
+    @include blue-text; 
+}
+
+.main__suptitle {
+    font-size: 16px;
+    line-height: 21px;
+    padding-bottom: 15px;
+    @include blue-text;
+}
+
+.main__title {
+    font-family: Nunito Sans;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    @include blue-text;
+}
+
+.footer__title {
+    color: #FFFFFF;
+}
+
+.link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #3DB370;
+}
