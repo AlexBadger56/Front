@@ -1,0 +1,136 @@
+@use './text';
+
+a:hover{
+  transition: .4s ease-in-out;
+  opacity: .8;
+}
+
+.header {
+  border-bottom: 1px solid #EFEEF3;
+
+&__wrapper{
+  margin: 22px 135px;
+}
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 135px;
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+
+  
+
+  &__text {
+    padding: 30px 15px 30px 0;
+  }
+
+  &__title {
+    padding-bottom: 15px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    padding: 40px;
+    gap: 10px;
+    border-radius: 14px;
+    border: 1px solid rgba(21, 101, 216, 0.10);
+    transition: .6s ease-in-out;
+
+    &:hover {
+      border-radius: 14px;
+      border: 1px solid rgba(61, 179, 112, 1);
+     
+      .cards__img {
+        border: 1px solid rgba(61, 179, 112, 1);
+        
+        &-logo {
+          display: none;
+        }
+
+        &-hover {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__img {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: 1px solid rgba(21, 101, 216, 0.10);
+    border-radius: 16px;
+    transition: .6s ease-in-out;
+
+    &-logo,
+    &-hover {
+      height: 36px;
+      padding: 10px;
+    }
+
+    &-hover {
+      display: none;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  background-color: #16133D;
+  color: #FFFFFF;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 40px 135px;
+    row-gap: 40px;
+    width: 100%;
+  }
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+
+  &__img {
+    display: flex;
+    width: 38px;
+    height: 38px;
+    background-color: #EFEEF3;
+    border-radius: 5px;
+    // padding: 10px;
+    transition: .3s ease-in-out;
+
+    &-logo {
+      width: 20px;
+      padding: 10px;
+    }
+
+    &:hover {
+      fill: #3DB370;
+      cursor: pointer;
+    }
+  }
+}
+
