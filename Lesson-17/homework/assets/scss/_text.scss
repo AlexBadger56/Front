@@ -1,0 +1,68 @@
+@use './fonts';
+
+.header__suptitle {
+    color: #898F8F;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+
+}
+
+.header__suptitle,
+.header__title,
+.button {
+    text-transform: uppercase;
+}
+
+.header__title {
+    color: #FFCC00;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 66px;
+}
+
+.about__title {
+    color: #666;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.about__title,
+.header__title {
+    font-family: Roboto;
+}
+
+.header__suptitle,
+.about__subtitle,
+.about__content {
+    font-family: Raleway;
+
+}
+
+.about__subtitle {
+    color: #666;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: capitalize;
+}
+
+.about__content {
+    color: #333;
+    text-align: center;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.button {
+    color: #666;
+    font-family: Open-sans;
+    font-weight: 700;
+    line-height: 14px;
+}
+
+.about__content,
+.button {
+    font-size: 14px;
+}
