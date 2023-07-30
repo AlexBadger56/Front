@@ -1,0 +1,166 @@
+@use './text';
+
+body {
+    margin: 121px 135px;
+    min-width: 1170px;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 450px;
+        width: 100%;
+        height: 157px;
+        margin: 0 auto 40px;
+
+    }
+
+    &__suptitle {
+        padding-bottom: 15px;
+    }
+
+    &__title {
+        padding-bottom: 40px;
+    }
+
+    &__decoration {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        &-svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__divider {
+        width: 210px;
+        height: 1px;
+        background-color: #FFCC00;
+    }
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1170px;
+        width: 100%;
+        min-height: 560px;
+        margin: 0 auto;
+    }
+
+    &__divider {
+        height: 560px;
+        width: 1px;
+        background-color: #FFCC00;
+    }
+}
+
+
+.hero,
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 430px;
+    width: 100%;
+}
+
+.about {
+
+    &__title,
+    &__divider,
+    &__subtitle {
+        margin-bottom: 30px;
+    }
+
+    &__divider {
+        width: 100px;
+        height: 1px;
+        background-color: #FFCC00;
+    }
+
+    &__decoration {
+        display: inline-flex;
+        margin: 0 auto 25px;
+        width: 50;
+        height: 4px;
+        gap: 5px;
+    }
+
+    &__content {
+        margin-bottom: 20px;
+    }
+}
+
+.rectangle-s,
+.rectangle-l {
+    height: 100%;
+    background-color: #FFCC00;
+}
+
+.rectangle-s {
+    width: 10px;
+}
+
+.rectangle-l {
+    width: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 50px;
+    width: 135px;
+    height: 30px;
+    gap: 5px;
+
+    &__link {
+        width: 30px;
+        height: 30px;
+        stroke: #CCCCCC;
+        fill: #CCCCCC;
+        transition: .4s ease-in-out;
+
+        &:hover {
+            stroke: #FFCC00;
+            fill: #FFCC00;
+        }
+    }
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 26px;
+    padding: 5px 10px;
+    border: 1px solid #FFCC00;
+    transition: .5s ease-in-out;
+
+    &:hover {
+        background-color: #FFCC00;
+        color: #FFFFFF;
+    }
+}
+
+.repo {
+    display: flex;
+    margin: 100px auto;
+}
