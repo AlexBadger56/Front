@@ -12,10 +12,12 @@
 </head>
 
 <body>
-    <!-- <header class="text header wrapper">
-        <a href="./lesson-18-19-index.html" class="link-logo link-style">
-            <img src="./assets/images/productly-logo.png" alt="Productly Logo" class="logo">
-        </a>
+    <header class="text header wrapper">
+        <div class="nav__wrapper">
+            <a href="./lesson-18-19-index.html" class="link-logo link-style">
+                <img src="./assets/images/productly-logo.png" alt="Productly Logo" class="logo">
+            </a>
+        </div>
 
         <nav>
             <ul class="navigation text font-size-16">
@@ -26,12 +28,27 @@
             </ul>
         </nav>
 
-        <div>
+        <div class="header__btn">
             <button class="button text button-bg-white link-style">Sign in</button>
-            <button class="button text link-style">Sign up</button>
+            <button class="button text link-style ">Sign up</button>
         </div>
 
-    </header> -->
+        <div id="burger" class="burger">
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="mobile-nav">
+            <nav>
+                <ul class="navigation text font-size-16">
+                    <li> <a href="#" target="_self" class="link link-style">Product</a> </li>
+                    <li> <a href="#" target="_self" class="link link-style">Customers</a> </li>
+                    <li><a href="#" target="_self" class="link link-style">Pricing</a></li>
+                    <li><a href="#" target="_self" class="link link-style">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
 
     <main>
         <article class="design-thinking wrapper">
@@ -264,7 +281,7 @@
         </form>
 
     </footer>
-
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
