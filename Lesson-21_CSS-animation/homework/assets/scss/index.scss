@@ -1,0 +1,196 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 75px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background-color: cadetblue;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+    background-color: white;
+    color: cadetblue;
+    border-color: cadetblue;
+    }
+  }
+  
+
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 100px;
+    height: 150px;
+    
+    &:hover > .front {
+        transform: perspective(200px) rotateY(-180deg);
+    }
+
+    &:hover > .back {
+        transform: perspective(200px) rotateY(0deg);
+    }
+}
+
+.front {
+    background-image: url('../../assets/images/shirt.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    transform: perspective(200px) rotateY(0deg);
+    transition: .7s ease-in-out;
+    border-radius: 7px;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 7px;
+    width: 100px;
+    height: 150px;
+    background-color: oldlace;
+    transform: perspective(200px) rotateY(180deg);
+    backface-visibility: hidden;
+    transition: .7s ease-in-out;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+.top {
+    &__box {
+        width: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.mid {
+    display: flex;
+    justify-content: center;
+}
+
+.bot {
+    transform: rotate(180deg);
+
+    &__box {
+        width: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.rank {
+    margin-bottom: 5px;
+}
+
+.suit {
+    width: 10px;
+    height: 10px;
+
+    &--heart {
+        width: 8px;
+        height: 8px;
+
+        &-mid {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    &__spades,
+    &__clubs {
+        width: 15px;
+        height: 15px;
+        margin-top: -3px;
+
+        &-mid {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    &--mid {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.diamonds {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    transform: rotate(45deg);
+}
+
+.heart {
+    background-color: red;
+    position: relative;
+    transform: rotate(45deg);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .heart:before,
+  .heart:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .heart:before {
+    top: -5px;
+    left: 0;
+
+    .suit--heart-mid & {
+        top: -7px;
+    }
+  }
+  
+  .heart:after {
+    left: -5px;
+    top: 0;
+
+    .suit--heart-mid & {
+        left: -7px;
+    }
+  }
+
+  .clubs,
+  .spades {
+    width: 100%;
+    height: 100%;
+  }
+
+  
