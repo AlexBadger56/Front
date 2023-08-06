@@ -4,51 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/styles/index.css">
     <link rel="stylesheet" href="./dist/styles/reset.css">
+    <link rel="stylesheet" href="./dist/styles/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
     <title>Productly</title>
 </head>
 
-<body>
-    <header class="text header wrapper">
-        <div class="nav__wrapper">
-            <a href="./lesson-18-19-index.html" class="link-logo link-style">
-                <img src="./assets/images/productly-logo.png" alt="Productly Logo" class="logo">
-            </a>
+<body class="body">
+    <header class="header text">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <div class="nav__wrapper">
+                    <a href="./lesson-18-19-index.html" class="link-logo link-style">
+                        <img src="./assets/images/productly-logo.png" alt="Productly Logo" class="logo">
+                    </a>
+                </div>
+
+                <nav class="navigation">
+                    <ul class="navigation__list text font-size-16">
+                        <li> <a href="#" target="_self" class="link link-style">Product</a> </li>
+                        <li> <a href="#" target="_self" class="link link-style">Customers</a> </li>
+                        <li><a href="#" target="_self" class="link link-style">Pricing</a></li>
+                        <li><a href="#" target="_self" class="link link-style">Resources</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__btn">
+                    <button class="button text button-bg-white link-style">Sign in</button>
+                    <button class="button text link-style ">Sign up</button>
+                </div>
+
+                <div id="burger" class="burger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
         </div>
+    </header>
 
-        <nav>
-            <ul class="navigation text font-size-16">
-                <li> <a href="#" target="_self" class="link link-style">Product</a> </li>
-                <li> <a href="#" target="_self" class="link link-style">Customers</a> </li>
-                <li><a href="#" target="_self" class="link link-style">Pricing</a></li>
-                <li><a href="#" target="_self" class="link link-style">Resources</a></li>
-            </ul>
-        </nav>
-
-        <div class="header__btn">
+    <div class="mobile-nav">
+        <div class="header__btn header__btn--mobile">
             <button class="button text button-bg-white link-style">Sign in</button>
             <button class="button text link-style ">Sign up</button>
         </div>
 
-        <div id="burger" class="burger">
-            <span></span><span></span><span></span>
-        </div>
-
-        <div class="mobile-nav">
-            <nav>
-                <ul class="navigation text font-size-16">
-                    <li> <a href="#" target="_self" class="link link-style">Product</a> </li>
-                    <li> <a href="#" target="_self" class="link link-style">Customers</a> </li>
-                    <li><a href="#" target="_self" class="link link-style">Pricing</a></li>
-                    <li><a href="#" target="_self" class="link link-style">Resources</a></li>
-                </ul>
-            </nav>
-        </div>
-
-    </header>
+        <nav class="navigation navigation--mobile">
+            <ul class="navigation__list navigation__list--mobile text font-size-16">
+                <li><a href="#" target="_self" class="link link-style">Product</a> </li>
+                <li><a href="#" target="_self" class="link link-style">Customers</a> </li>
+                <li><a href="#" target="_self" class="link link-style">Pricing</a></li>
+                <li><a href="#" target="_self" class="link link-style">Resources</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <main>
         <article class="design-thinking wrapper">
@@ -62,7 +70,6 @@
             <div class="thinking__img-wrapper">
                 <img src="./assets/images/People.svg" alt="People image">
             </div>
-
         </article>
 
         <article class="design-tools-bg">
@@ -149,7 +156,7 @@
             </div>
 
             <div class="product-managers_text-block">
-                <p>Easier decision making for </p>
+                <p>Easier decision-making for </p>
                 <h2 class="title-m padding-bot-20">Product Managers</h2>
                 <p class="padding-bot-40">The Myspace page defines the individual, his or her characteristics, traits,
                     personal choices and the overall personality of the person. </p>
@@ -219,10 +226,8 @@
         </article>
     </main>
 
-    <hr>
-
     <footer class="footer font-size-16 wrapper">
-        <a href="./lesson-11-index.html" class="link-logo link-style footer__item">
+        <a href="./lesson-18-19-index.html" class="link-logo link-style footer__item">
             <img src="./assets/images/productly-logo.png" alt="Productly Logo" class="logo">
         </a>
 
