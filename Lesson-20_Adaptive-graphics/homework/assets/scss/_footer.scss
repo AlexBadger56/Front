@@ -1,0 +1,120 @@
+.footer {
+  background-color: var(--c-gray-1);
+  padding: 70px 0 30px;
+
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+      margin-bottom: 51px;
+    }
+
+    @media (max-width: 425px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__heading {
+    font-family: 'Red Hat Display', sans-serif;
+    letter-spacing: 2.4px;
+    margin-bottom: 30px;
+    line-height: 62px;
+    font-size: 48px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 425px) {
+      letter-spacing: 1.6px;
+      line-height: normal;
+      font-size: 32px;
+    }
+  }
+
+  &__phone,
+  &__mail {
+    letter-spacing: 1.6px;
+    line-height: 166%;
+    font-size: 16px;
+
+    @media (max-width: 425px) {
+      letter-spacing: 1.8px;
+      font-size: 18px;
+    }
+  }
+
+  &__phone {
+    margin-bottom: 15px;
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__link {
+    border: 1px solid var(--c-gray);
+    justify-content: center;
+    align-items: center;
+    margin-left: 23px;
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+
+    @media (max-width: 768px) {
+      &:first-child {
+        margin: 0;
+      }
+    }
+
+    &:hover {
+      background-color: var(--c-gray);
+
+      svg {
+        color: var(--c-white);
+        opacity: 1;
+      }
+    }
+  }
+
+  &__svg {
+    color: var(--c-gray);
+    height: 100%;
+    width: 100%;
+  }
+
+  &__copyright p {
+    letter-spacing: 1.2px;
+    text-align: center;
+    line-height: 166%;
+    font-size: 12px;
+
+    @media (max-width: 425px) {
+      letter-spacing: 1.6px;
+      font-size: 16px;
+    }
+  }
+}
