@@ -1,0 +1,54 @@
+.main {
+  .hero {
+    &__box {
+      margin-bottom: 90px;
+    }
+
+    &__text {
+      max-width: 570px;
+      width: 100%;
+
+      @media (max-width: 1024px) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .section {
+    margin-bottom: 90px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 70px;
+    }
+  }
+
+  .box {
+    margin-bottom: 20px;
+    max-height: 500px;
+    max-width: 100%;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      max-height: 380px;
+      max-width: 700px;
+      width: 100%;
+    }
+
+    @media (max-width: 320px) {
+      max-height: 300px;
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+
+  .text {
+    letter-spacing: 0.95px;
+    color: var(--c-gray);
+
+    @media (max-width: 425px) {
+      letter-spacing: 0.8px;
+      line-height: 32px;
+      font-size: 16px;
+    }
+  }
+}
