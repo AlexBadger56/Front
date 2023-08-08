@@ -231,6 +231,9 @@ h2 {
 .footer__phone {
   margin-bottom: 15px;
 }
+.footer__repo {
+  margin-top: 15px;
+}
 .footer__social {
   display: flex;
   align-items: center;
