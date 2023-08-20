@@ -71,23 +71,6 @@ function addProduct(newProduct) {
 
 }
 
-// console.log(purchases);
-
-// addProduct({
-//     name: 'Product 5',
-//     quantity: 7,
-//     sell: false,
-//     cost: 65,
-//     sum: this.quantity * this.cost,
-// });
-
-// addProduct({
-//     name: 'Product 4',
-//     quantity: 8,
-//     sell: false,
-//     cost: 56,
-//     sum: this.quantity * this.cost,
-// });
 
 // Maximum
 function totalProductsSum() {
