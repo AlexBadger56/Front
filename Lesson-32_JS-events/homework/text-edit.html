@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Text Edit</title>
+</head>
+
+<body>
+    <div class="content" id="content">
+        <div class="content__textarea" id="content__textarea">
+            Створити HTML-сторінку для відображення/редагування тексту. При відкритті сторінки текст відображається за
+            допомогою тега div. При натисканні Ctrl + E, замість div з'являється textarea з тим же текстом, який тепер
+            можна редагувати. При натисканні Ctrl + S, замість textarea з'являється div з уже зміненим текстом. Не
+            забудь вимкнути поведінку за замовчуванням для цих поєднань клавіш.
+            <div class="content__textarea--resizer"></div>
+        </div>
+    </div>
+    <script src="./text-edit.js"></script>
+</body>
+
+</html>
