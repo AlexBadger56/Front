@@ -1,6 +1,5 @@
 document.body.addEventListener("keydown", (event) => {
     const resizer = document.createElement("div");
-    console.log(event);
     if ((event.code === "KeyE" || event.code === "KeyS") && event.ctrlKey) {
 
         event.returnValue = false; //не передає дію за комбінацією клавіш до браузера

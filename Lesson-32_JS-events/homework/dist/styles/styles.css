@@ -44,77 +44,9 @@ h1 {
   border-color: cadetblue;
 }
 
-.modal {
-  width: 100vw;
-  height: 100vh;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  background-color: coral;
-}
-
-img {
-  width: 600px;
-  height: 400px;
+.content__textarea {
   padding: 50px;
-}
-
-.open-btn,
-.close-btn,
-.change-light-btn {
-  width: 250px;
-  height: 100px;
-  background-color: coral;
-  font-size: 30px;
-  margin-bottom: 25px;
-  border-radius: 15px;
-}
-.open-btn:hover,
-.close-btn:hover,
-.change-light-btn:hover {
-  cursor: pointer;
-}
-
-.close-btn {
-  background-color: whitesmoke;
-}
-
-.traffic-light {
-  display: flex;
-  width: 500px;
-  height: 500px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.light {
-  width: 100px;
-  height: 100px;
-  border: 2px solid black;
-  border-radius: 50%;
-  margin: 10px;
-}
-
-.red {
-  background-color: red;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-.green {
-  background-color: lightgreen;
-}
-
-.unactive {
-  background-color: white;
-}
-
-.change-light-btn {
-  background-color: bisque;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
