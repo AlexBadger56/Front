@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
   font-size: 16px;
   font-weight: 400;
@@ -11,7 +11,7 @@ body {
 }
 
 .common {
-  // overflow: hidden;
+  overflow-x: hidden;
 }
 
 .mc-container {
@@ -64,19 +64,27 @@ img {
   object-fit: cover;
 }
 
-.title-h1 {
-  font-family: "Montserrat", serif;
+.mc-h1 {
+  font-family: "Montserrat", sans-serif;
   font-size: 80px;
   line-height: 98px;
   font-weight: 700;
-  text-transform: capitalize;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+  }
 }
 
 .more-btn {
   padding: 20px 32px;
   background-color: #5373FD;
   text-align: center;
-  font-family: "Aleo", serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 20px;
   letter-spacing: 1.12px;
   text-transform: uppercase;
