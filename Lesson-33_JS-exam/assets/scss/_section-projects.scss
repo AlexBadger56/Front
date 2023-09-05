@@ -1,116 +1,160 @@
 .projects {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: fit-content;
+  padding: 130px 0 150px;
+  overflow: hidden;
 
-  &__suptitle {
-    color: #2C4058;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 27px;
+  @media (max-width: 768px) {
+    padding: 75px 0;
   }
 
   &__title {
-    display: flex;
-    flex-direction: column;
-    margin: 100px 0 90px;
-    justify-content: center;
-    align-items: center;
-    color: #2C4058;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    margin-bottom: 147px;
+    text-align: center;
+    position: relative;
 
 
     &::before {
+      position: absolute;
       content: '';
+      top: -30px;
+      left: calc(50% - 50px);
       width: 100px;
       height: 1px;
       background-color: #2C4058;
-      margin-bottom: 30px;
     }
   }
 
-  &__first,
-  &__second {
-   display: flex;
-   padding: 0 10px;
-   width: 100%;
-   height: 527px;
-   margin-bottom: 120px;
+  &__item {
+    margin-bottom: 177px;
+    display:flex;
+    gap: 65px;
 
-   &-title {
-    margin-bottom: 19px;
-   }
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+
+    &:nth-child(odd) {
+      .projects__image {
+        &::before {
+          right: 260px;
+          background-color: #55B7FF;
+
+          @media (max-width: 768px) {
+            right: 50%;
+          }
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+
+      @media (max-width: 1024px) {
+        flex-direction: column;
+      }
+
+      .projects__image {
+        &::before {
+          left: 260px;
+          background-color: #7E5AFF;
+
+          @media (max-width: 768px) {
+            left: 50%;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  &__first {
-    padding-right: 215px;
-  }
-
-  &__second {
-    padding-left: 215px;
-    justify-content: space-between;
-  }
-
-
-  &__first-content,
-  &__second-content {
-    display: flex;
-    flex-direction: column;
-    width: 470px;
-    height: 350px;
-  }
-
-  &__first-content {
-    padding: 150px 10px 26px 330px;
-  }
-
-  &__second-content {
-    padding: 150px 410px 26px 10px;
-
-  }
-
-  &__geoposition {
-    color: #000;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: 400;
-  }
-
-  &__first-img {
-    top: 57px;
-    right: -265px;
-  }
-
-  &__second-img {
-    top: 57px;
-    left: -265px;
-  }
-
-  &__first-img,
-  &__second-img {
-    position: absolute;
-  }
-}
-
-.first__image-container,
-.second__image-container {
-    width: 565px;
-    height: 450px;  
-    padding: 10px;
+  &__image {
     position: relative;
-}
+    max-width: 630px;
+    height: 470px;
+    width: 100%;
+    z-index: 1;
 
-.first__image-container {
-  background-color: #55B7FF;
-}
+    @media (max-width: 1024px) {
+      margin: 0 auto;
+    }
 
-.second__image-container {
-  background-color: #7E5AFF;
-  right: 10%;
+    @media (max-width: 768px) {
+      height: auto;
+    }
+
+    img {
+      @media (max-width: 768px) {
+        height: auto;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: -57px;
+      width: 100vw;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+
+  &__content {
+    max-width: 475px;
+    width: 100%;
+    padding-top: 94px;
+
+    @media (max-width: 1024px) {
+      padding-top: 0;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  &__suptitle {
+    font-size: 22px;
+    line-height: normal;
+  }
+
+  &__heading {
+    margin-bottom: 19px;
+  }
+
+  &__text {
+    color: #2C4058;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    margin-bottom: 60px;
+
+    @media (max-width: 1024px) {
+      margin: 0 auto 40px;
+    }
+  }
+
+  &__geolocation {
+    display: inline-flex;
+    align-items: center;
+
+    @media (max-width: 1024px) {
+      margin: 0 auto;
+    }
+
+    svg {
+      width: 9px;
+      height: 17px;
+      margin-right: 10px;
+    }
+
+    span {
+      color: #000;
+      font-size: 15px;
+      font-style: italic;
+      line-height: normal;
+    }
+  }
 }
