@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "sass": "^1.66.1",
+    "swiper": "^10.2.0"
+  },
+  "name": "lesson-33_js-exam",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx sass -w ./assets/scss:./dist/styles"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="spinner-border m-5 loading" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <form class="row g-3 needs-validation mt-4 align-items-end js-search-movie" novalidate>
+            <div class="col-6">
+                <input type="text" class="form-control movie-name" id="validationCustom03 "
+                    placeholder="Type movie name" required>
+                <div class="invalid-feedback">
+                    Please type movie name
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <select class="form-select movie-type" id="validationCustom04" required>
+                    <option selected disabled value="">Choose type</option>
+                    <option value="movie">Movie</option>
+                    <option value="series">Series</option>
+                    <option value="episode">Episode</option>
+                </select>
+            </div>
+
+            <div class="col-3">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </div>
+        </form>
+
+        <h1 class="text-center my-4">List movie</h1>
+
+        <div class="row results-list">
+
+        </div>
+
+        <div class="pagination-container d-flex flex-wrap align-items-center justify-content-center">
+
+        </div>
+
+        <div class="card-movie col-md-6 col-lg-3 mb-4">
+            <div class="card-movie__img"></div>
+            <div class="card-movie__title"></div>
+            <div class="card-movie__type"></div>
+            <button class="btn btn-primary card-movie__details" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">Details</button>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade movie-description" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="staticBackdropLabel"></h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body__description"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

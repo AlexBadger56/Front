@@ -1,0 +1,74 @@
+.what-say {
+  background-image: url(../../assets/images/what-say.png);
+  padding: 120px 0 180px;
+
+  @media (max-width: 768px) {
+    padding: 60px 0 120px;
+  }
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: "Aleo", serif;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: capitalize;
+    margin: 0 0 60px;
+  }
+
+  &__content {
+    display: flex;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    min-width: 440px;
+
+    @media (max-width: 1360px) {
+      min-width: 380px;
+    }
+
+    @media (max-width: 1024px) {
+      min-width: 320px;
+    }
+
+    @media (max-width: 768px) {
+      height: 336px;
+    }
+  }
+
+  &__info {
+    padding: 48px 65px 48px 60px;
+    background-color: #333;
+    text-align: left;
+
+    @media (max-width: 1360px) {
+      padding: 48px 60px;
+    }
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 1.6px;
+
+    svg {
+      display: inline-block;
+      padding: 0 6px 3px 0;
+    }
+  }
+}
