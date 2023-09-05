@@ -120,7 +120,7 @@ img {
   align-items: center;
   padding: 16px;
   max-width: 266px;
-  min-width: 156px;
+  min-width: 126px;
   width: fit-content;
   background-color: white;
   color: #000;
@@ -936,6 +936,11 @@ img {
   .footer__copyright {
     text-align: center;
   }
+}
+
+.repo {
+  margin-right: 10px;
+  min-width: 120px;
 }
 
 /*# sourceMappingURL=index.css.map */
