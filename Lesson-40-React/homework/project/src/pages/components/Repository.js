@@ -1,20 +1,20 @@
 import React from 'react';
+import '../../assets/scss/SecondPage.scss';
 
 function Repo() {
   const openExternalLink = () => {
     // URL зовнішнього сайту, на який ви хочете перейти
-    const externalUrl = 'https://www.example.com';
+    const externalUrl = 'https://github.com/AlexBadger56/Front_Lessons/tree/main/Lesson-40-React/homework/project';
 
     // Відкриття посилання у новому вікні або вкладці браузера
     window.open(externalUrl, '_blank');
   };
 
   return (
-    <div>
-      <p>Клацніть на посиланні, щоб перейти на зовнішній сайт:</p>
-      <a href="#" onClick={openExternalLink}>Перейти на зовнішній сайт</a>
-    </div>
+    <>     
+      <button className="next-btn repo" onClick={openExternalLink}>My repositiry</button>
+    </>
   );
 }
 
-export default MyComponent;
+export default Repo;

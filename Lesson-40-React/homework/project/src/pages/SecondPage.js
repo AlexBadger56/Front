@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import Blog from './components/Blog';
 import News from './components/News';
+import Repo from './components/Repository';
 
 function SecondPage() {
   return (
@@ -13,7 +14,7 @@ function SecondPage() {
          <Blog />
          <News />
       </div>
-      <button className="next-btn repo">My repositiry</button>
+      <Repo />
     </div>
   );
 }
