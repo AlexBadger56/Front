@@ -1,0 +1,130 @@
+.body__wrapper {
+        max-width: 1177px;
+        width: 100%;
+        margin: 0 auto;
+
+    &, 
+    h2, 
+    .header__title {
+        font-family: 'Inter', serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    }
+
+.header {
+   height: fit-content;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+        min-height: 48px;
+        width: 100%;
+        background-color: #D9D9D9;
+    }
+
+    &__logo {
+        width: 181px;
+        min-height: 37px;
+        margin: 6px 26px;
+        background-color: #F1F2AE;
+    }
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    gap: 19px;
+    padding-right: 28px;
+    
+    &-item {
+    width: 46px;
+    height: 37px;
+    background-color: #E7EFD6;
+    
+    }
+}
+
+.banner {
+    display: flex;
+    min-height: 145px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #D9D9D9;
+}
+
+.content__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog {
+    max-width: 810px;
+    width: 100%;
+
+    &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D9D9D9;
+    margin: 24px 0;
+    min-height: 437px; 
+    }
+   
+    &__title {
+        margin: 17px 0 15px;
+    }
+
+    &__content {
+        max-width: 759px;
+        width: 100%;
+        min-height: 70px;
+        background-color: #F9D7D7;
+        margin-bottom: 27px;
+
+        &:last-child {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.news {
+    max-width: 300px;
+    width: 100%;
+
+    &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D9D9D9;
+    margin: 24px 0;
+    min-height: 437px; 
+    }
+   
+    &__title {
+        margin: 17px 0 15px;
+    }
+
+    &__content {
+        max-width: 247px;
+        width: 100%;
+        min-height: 110px;
+        background-color: #BDCDF6;
+        margin-bottom:9px;
+
+        &:last-child {
+            margin-bottom: 29px;
+        }
+    }
+}
+
+.repo {
+
+}
