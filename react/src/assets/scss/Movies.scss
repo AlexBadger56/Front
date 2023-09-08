@@ -1,0 +1,18 @@
+.movies {
+  padding: 1rem;
+
+  &__search {
+    display: flex;
+    padding-block-end: 1rem;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.5rem;
+  }
+}
+
+.movie {
+  background-color: whitesmoke;
+}
