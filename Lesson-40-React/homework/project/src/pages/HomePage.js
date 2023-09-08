@@ -1,5 +1,14 @@
-import './App.scss';
-import './pages/HomePage';
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+function HomePage() {
+  return (
+    <div>
+      <Main />
+    
+    </div>
+  );
+}
 
 function Weather() {
   const weatherBlock = {
@@ -29,24 +38,17 @@ function Main() {
   return (
     <div className='main__wrapper'>
       <div className='main__container'>
-      <h1>CSS Weather Forecast <span className='icon-title'></span> </h1>
+      <h1 className='title'>CSS Weather Forecast <span className='icon-title'></span> </h1>
         <div className='.weather__container'>
           <Weather />
         </div>
         <p>Have a nice day and don't forget umbrella if you are in New Delhi now!</p>
-        <button className="next-btn">Second part</button>
+        <Link to="/second-page"><button className="next-btn">Second part</button> </Link> 
       </div>
 
     </div>
   );
 };
 
-function App() {
-  return (
-    <>
-      <Main />
-    </>
-  );
-};
+export default HomePage;
 
-export default App;

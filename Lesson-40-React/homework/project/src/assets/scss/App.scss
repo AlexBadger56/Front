@@ -1,4 +1,4 @@
-@use './assets/iconfont/iconfont.css';
+@use '../iconfont/iconfont.css';
 
 *,
 *::after,
@@ -6,6 +6,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 .next-btn {
@@ -25,7 +29,7 @@
     background-color: #FFF;
     color: #2B81AC;
     transition: .6s ease;
-    cursor: url('../../hw40/src/assets/images/cursor.svg'), auto;
+    cursor: url('../images/cursor.svg'), auto;
   }
 }
 
@@ -47,7 +51,7 @@
   margin: 0 auto;
 }
 
-h1 {
+.title {
   display: flex;
   align-items: center;
   font-size: 21px;
@@ -71,7 +75,7 @@ h1 {
   margin-bottom: 20px;
 
   &:hover {
-    cursor: url('../../hw40/src/assets/images/cursor.svg'), auto;
+    cursor: url('../images/cursor.svg'), auto;
   }
 }
 
