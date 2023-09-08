@@ -1,0 +1,146 @@
+@use './assets/iconfont/iconfont.css';
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.next-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  width: 250px;
+  height: 100px;
+  background-color: transparent;
+  color: #FFF;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 20px 0;
+
+  &:hover {
+    background-color: #FFF;
+    color: #2B81AC;
+    transition: .6s ease;
+    cursor: url('../../hw40/src/assets/images/cursor.svg'), auto;
+  }
+}
+
+.main__wrapper {
+  background-color: #3399CC;
+  border:  25px solid #2B81AC;
+  min-width: 1200px;
+  width: 100%;
+  padding: 130px 135px 180px;
+  font-family: 'Lucida Sans Unicode', sans-serif;
+  color: #FFF;
+  font-weight: 400;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+  font-weight: 400;
+  width: 263px;
+  justify-content: space-between;
+  padding-bottom: 12px;
+
+  & span {
+    display: flex;
+  }
+}
+
+.weather {
+  &__container {
+  display: grid;
+  min-width: 1170px;
+  height: fit-content;
+  grid-template: repeat(4, 147px) / repeat(4, 1fr);
+  border: 2px solid #FFF;
+  margin-bottom: 20px;
+
+  &:hover {
+    cursor: url('../../hw40/src/assets/images/cursor.svg'), auto;
+  }
+}
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;
+    opacity: .7;
+    text-transform: capitalize;
+  }
+
+  &__temp {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.lisbon {
+  background-color: #3399CC;
+  grid-area: 1/1/1/3;
+}
+
+.paris {
+  background-color: #33CCCC;
+}
+
+.belgrade {
+  background-color: #996699;
+}
+
+.venice {
+  background-color: #C24747;
+}
+
+.tel-Avive {
+  background-color: #E2674A;
+}
+
+.cair {
+  background-color: #FFCC66;
+}
+
+.new-York {
+  background-color: #99CC99;
+}
+ 
+.new-Delhi {
+  background-color: #669999;
+}
+
+.san-Francisco {
+  background-color: #CC6699;
+  grid-area: 3/2/3/4;
+}
+
+.tokyo {
+  background-color: #339966;
+}
+
+.sydney {
+  background-color: #666699;
+  grid-area: 4/1/4/5;
+}
